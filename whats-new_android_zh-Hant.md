@@ -1,13 +1,14 @@
-# What's new
+# 有什麼新消息
 
-See the new features and changes in this update.
+在此更新中查看新功能和更改。
 
-## Top genres section
+## 熱門流派區
 
-View your top genres now on the top tab (More genre stats are coming in the future).
+現在在頂部選項卡上查看您的熱門流派（未來會有更多流派統計數據）。
 
-## Track previews
+## 曲目預覽
 
-Some tracks now have 30 second audio previews (This will expand to more tracks in the future)!
+某些曲目現在有 30 秒的音頻預覽（未來將擴展到更多曲目）！
 
-View our full changelog in the changelog history page in the settings page.
+在設置頁面的更新日誌歷史記錄頁面中查看我們的完整更新日誌。 
+
