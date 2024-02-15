@@ -1,19 +1,20 @@
-# What's new
+# 有什麼新功能
 
-See the new features and changes in this update.
+查看此更新中的新功能和變更。
 
-## Top genres section
+## 熱門音樂類型區塊
 
-View your top genres now on the top tab (More genre stats are coming in the future).
+立即在頂部標籤頁查看您最喜愛的音樂類型（未來將會有更多類型統計數據）。
 
-## Track previews
+## 曲目預覽
 
-Some tracks now have 30 second audio previews (This will expand to more tracks in the future)!
+部分曲目現在提供 30 秒的音頻預覽（未來將擴展至更多曲目）！
 
-## iOS 17+ Widgets
+## iOS 17+ 小工具
 
-We now have stats widgets for the home screen and lock screen! (Requires you to have imported your data)
+我們現在提供主畫面與鎖定畫面的統計數據小工具！（需要您已導入數據）
 
-![Widgets promo](https://cdn.stats.fm/file/statsfm/promo/whats-new/ios-widgets-promo-min.webp)
+Widgets promo: [https://cdn.stats.fm/file/statsfm/promo/whats-new/ios-widgets-promo-min.webp](https://cdn.stats.fm/file/statsfm/promo/whats-new/ios-widgets-promo-min.webp)
 
-View our full changelog in the changelog history page in the settings page.
+在設定頁面的更新日誌中查看我們完整的更新項目。 
+
