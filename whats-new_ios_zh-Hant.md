@@ -13,7 +13,7 @@
 ## iOS 17+ 小工具
 
 我們現在提供主畫面與鎖定畫面的統計數據小工具！（需要您已導入數據）
-
+![Widgets promo](https://cdn.stats.fm/file/statsfm/promo/whats-new/ios-widgets-promo-min.webp)
 ![小工具 promo](https://cdn.stats.fm/file/statsfm/promo/whats-new/ios-widgets-promo-min.webp)
 
 在設定頁面的更新日誌中查看我們完整的更新項目。 
