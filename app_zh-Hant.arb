@@ -1,2065 +1,918 @@
 {
-  "connectingToSpotify": "正在連接至 Spotify...",
-  "splashLoading": "正在處理您的最新數據...",
-  "loadingData": "載入資料中...",
-  "loadingAlmost": "差不多了...",
-  "loadingJustABit": "還剩一點點...",
-  "totalTimesStreamed": "總計播放次數",
-  "timesStreamed": "播放次數",
-  "totalMinutesStreamed": "總計播放時間 (分鐘)",
-  "totalHoursStreamed": "總計播放時間 (小時)",
-  "totalDaysStreamed": "總播放天數",
-  "daysStreamed": "播放天數",
-  "totalTracksStreamed": "總計已播放歌曲數目",
-  "minutesStreamed": "播放時數 (分鐘)",
-  "hoursStreamed": "播放時數 (小時)",
-  "tracksStreamed": "已播放歌曲",
-  "differentTracks": "不同的曲目",
-  "differentArtists": "不同藝人",
-  "differentAlbums": "不同專輯",
-  "averageStreamsPerDay": "每日平均播放量",
-  "averageMinutesPerDay": "每日平均時長 (分鐘)",
-  "minutesShort": "{count} 分鐘",
-  "@minutesShort": {
-    "placeholders": {
-      "count": {
-        "type": "int",
-        "format": "decimalPattern",
-        "example": "69"
-      }
-    }
-  },
-  "streamsMinutesPerDay": "每日平均播放量與時長 (分鐘)",
-  "openBeta": "開啟測試版",
-  "openBetaNotice": "此功能正處於公開測試版, 意味著你可能會遇到意料之外的漏洞。",
-  "plusForCount": "取得 Plus 會員來查看你的完整數據",
-  "historyImportedBenefits": "匯入長期串流記錄後，便能查看播放特定曲目的頻率，按日期顯示播放歷史以及更加額外功能",
-  "importCodeVerified": "成功驗證匯入的代碼！",
-  "manageImports": "管理匯入資料",
-  "historyImport": "匯入你的串流紀錄",
-  "historyImportDescription2": "「播放次數」和「完整歷史紀錄」等功能需要您從 Spotify 匯入收聽歷史資料。這是一個簡單的一次性程序。匯入檔案後，您的資料將自動保持最新。",
-  "historyImportSyncDescription": "匯入您的歷史紀錄後，stats.fm 將每小時自動保持更新。",
-  "syncTitle": "同步收聽歷史紀錄",
-  "syncDescription": "啟用此功能後，stats.fm 將定期擷取您最近播放的歌曲並將其添加到您的歷史紀錄中。請在向 Spotify 請求您的資料後才啟用此功能。匯入後將自動啟用。",
-  "syncDisableWarning": "如果您停用資料流同步，您的收聽歷史記錄將不再保持最新。播放次數和收聽時間等統計資訊也將停止更新。",
-  "fullGuide": "完整指南",
-  "importCode": "匯入代碼",
-  "importCodeCopied": "已複製匯入代碼到剪貼板", 
-  "importCodeValidity": "注意：此代碼有效期為 10 分鐘",
- "imports": "已匯入的檔案", 
- "importsNone": "沒有匯入的檔案", 
-  "requestSupport": "請求支援",
-  "support": "支援",
-  "importedAt": "Imported on {date} at {time}",
-  "@importedAt": {
-    "placeholders": {
-      "date": {
-        "type": "String",
-        "example": "03/14/2022"
-      },
-      "time": {
-        "type": "String",
-        "example": "11:00"
-      }
-    }
-  },
-  "importedOn": "Imported on {date}",
-  "@importedOn": {
-    "placeholders": {
-      "date": {
-        "type": "String",
-        "example": "12-12-2012"
-      }
-    }
-  },
-  "removeImportWarning": "Are you sure you want to remove this import and the {count} streams associated with it? This is action is irreversible! You'll have to import the file again if you want these streams to show up in your streaming history again.",
-  "@removeImportWarning": {
-    "placeholders": {
-      "count": {
-        "type": "int",
-        "format": "decimalPattern",
-        "example": "42000"
-      }
-    }
-  },
-  "removedImport": "Removed import with id {id}",
-  "@removedImport": {
-    "placeholders": {
-      "id": {
-        "type": "String",
-        "example": "blablabla"
-      }
-    }
-  },
-  "importStatus": "狀態: {statusMessage}",
-  "@importStatus": {
-    "placeholders": {
-      "statusMessage": {
-        "type": "String",
-        "example": "error"
-      }
-    }
-  },
-  "errored": "失敗",
-  "inQueue": "在佇列中",
-  "processing": "處理中",
-  "imported": "已匯入",
-  "unknown": "未知",
- "plusForHistory": "升級到 stats.fm Plus 以查看您的完整歷史紀錄",
- "dataFromImports": "此數據僅包含您從 .JSON 檔案匯入的串流。要更新此列表，請上傳新檔案。",
- "streams": "串流" 
-  "streamsF": "{count, plural, one{{count} stream} other{{count} streams}}",
-  "@streamsF": {
-    "placeholders": {
-      "count": {
-        "type": "int",
-        "format": "decimalPattern",
-        "example": "69"
-      }
-    }
-  },
- "streamsCaps": "串流",
- "enabled": "已啟用",
- "disabled": "已停用",
- "listenedFor": " • 已收聽 ",
-  "endedAt": "Ended at {time}",
-  "@endedAt": {
-    "placeholders": {
-      "time": {
-        "type": "String",
-        "example": "11:00"
-      }
-    }
-  },
-  "streamingHistory": "Streaming history",
-  "streamingHistoryNeedImport": "{displayName} needs to import their data.",
-  "@streamingHistoryNeedImport": {
-    "placeholders": {
-      "displayName": {
-        "type": "String",
-        "example": "sjoerd"
-      }
-    }
-  },
-  "streamingHistoryPrivate": "{displayName} has set this info to be private.",
-  "@streamingHistoryPrivate": {
-    "placeholders": {
-      "displayName": {
-        "type": "String",
-        "example": "sjoerd"
-      }
-    }
-  },
-  "streamingHistoryNeedPlus": "{displayName} needs to get Plus and import their data.",
-  "@streamingHistoryNeedPlus": {
-    "placeholders": {
-      "displayName": {
-        "type": "String",
-        "example": "sjoerd"
-      }
-    }
-  },
-  "streamingHistoryNoPlus": "Doesn't have Plus",
-  "pullUpToSearchFutherBack": "Pull up to search further back",
-  "streamsLowercase": "streams",
-  "minutesLowercase": "minutes",
-  "minutes": "{count} 分鐘",
-  "@minutes": {
-    "placeholders": {
-      "count": {
-        "type": "int",
-        "format": "decimalPattern",
-        "example": "50"
-      }
-    }
-  },
-  "seconds": "{count} 秒",
-  "@seconds": {
-    "placeholders": {
-      "count": {
-        "type": "int",
-        "format": "decimalPattern",
-        "example": "50"
-      }
-    }
-  },
-  "hours": "{count} 小時",
-  "@hours": {
-    "placeholders": {
-      "count": {
-        "type": "int",
-        "format": "decimalPattern",
-        "example": "50"
-      }
-    }
-  },
- "day": "天",
- "week": "週",
- "thisWeek": "本週",
- "month": "月",
- "year": "年",
- "globalCharts": "全球排行榜",
- "todayL": "今天",
- "cantConnectSpotistats": "stats.fm 無法連接到其伺服器，請稍後再試",
- "errorOnAppLaunch": "啟動應用程式時發生錯誤。",
- "plswait": "請稍候",
- "tryAgain": "再試一次",
- "theme": "主題",
- "dark": "深色",
- "oled": "OLED",
- "light": "淺色",
- "appTheme": "應用程式主題",
- "appAccentColour": "應用程式強調色",
- "accentColour": "強調色",
- "colourGreen": "綠色",
- "colourLime": "萊姆綠",
- "colourOrange": "橘色",
- "colourYellow": "有點黃",
- "colourBanana": "黃色",
- "colourPoop": "便便色",
- "colourVeryRed": "有點紅",
- "colourRed": "紅色",
- "colourPink": "粉紅色",
- "colourUnicorn": "獨角獸色",
- "colourPurple": "紫色",
- "colourBlurple": "藍紫色",
- "colourBlue": "藍色",
- "colourAzure": "天藍色",
- "colourAqua": "水藍色",
- "colourKindaDark": "無聊色",
- "colourTeal": "也無聊色",
- "colourSlate": "很無聊色",
- "colourStone": "非常無聊色",
- "colourGold": "金色",
- "colourPeach": "桃色",
- "colourWannabePeach": "也是桃色",
- "colourWhite": "白色",
- "colourBlack": "黑色",
-  "defaultValue": "預設",
-  "randomColour": "隨機顏色",
-  "randomColourIs": "隨機顏色: {colour}",
-  "@randomColourIs": {
-    "placeholders": {
-      "colour": {
-        "type": "String",
-        "example": "Red"
-      }
-    }
-  },
-  "credits": "致謝",
-  "joinBeta": "加入 Beta 測試計劃",
-  "joinDiscord": "加入我們的 Discord 伺服器",
-  "joinOurDiscord": "Join our server!",
-  "membersOnline": "在線成員",
-  "discordDesc": "stats.fm 在 Discord 上有一個很棒的社群，充滿著各種有趣的音樂相關活動，比如我們的每日歌曲挑戰。",
-  "leaveReview": "留下評論",
-  "today": "今日",
-  "yesterday": "昨日",
- "streamsByWeekday": "按星期幾劃分的串流",
- "streamsByMonthday": "按月份日期劃分的串流",
- "streamsByMonth": "按月份劃分的串流",
- "streamsByYear": "按年份劃分的串流",
- "noData": "沒有可用的數據",
- "noInternet": "沒有互聯網連接 :‎(",
- "noInternetDesc": "您似乎處於離線狀態。沒有有效的互聯網連接，stats.fm 將無法運行。",
- "artist": "藝人",
- "artistLowercase": "藝人",
- "artists": "藝人",
- "artistsLowercase": "藝人",
- "track": "曲目",
- "trackLowercase": "曲目",
- "tracks": "曲目",
- "tracksLowercase": "曲目",
- "album": "專輯",
- "albumLowercase": "專輯",
- "albums": "專輯",
- "albumsLowercase": "專輯",
- "topArtists": "熱門藝人",
- "topTracks": "熱門曲目",
- "topAlbums": "熱門專輯",
- "topGenres": "熱門流派", 
-  "yourTopBy": "Your top {type, select, tracks{tracks} albums{albums} other{items}} by {artist}",
-  "@yourTopBy": {
-    "placeholders": {
-      "type": {
-        "type": "String",
-        "example": "tracks"
-      },
-      "artist": {
-        "type": "String",
-        "example": "Rick Astley"
-      }
-    }
-  },
-  "theirTopBy": "Their top {type, select, tracks{tracks} albums{albums} other{items}} by {artist}",
-  "@theirTopBy": {
-    "placeholders": {
-      "type": {
-        "type": "String",
-        "example": "tracks"
-      },
-      "artist": {
-        "type": "String",
-        "example": "Rick Astley"
-      }
-    }
-  },
- "positionIndicators": "位置標示",
- "positionIndicatorsDesc": "這些圖標顯示項目自上次查看以來是上移、下移、完全沒動還是全新項目。此列表僅每天更新一次。",
- "indicatorNew": "項目為新增",
- "indicatorSame": "項目保持在相同位置",
- "indicatorUp": "項目已上移",
- "indicatorDown": "項目已下移",
- "none": "無",
- "dismiss": "關閉",
- "yes": "是",
- "no": "否",
- "openIn": "開啟於",
- "holdOn": "稍等一下...",
- "description": "簡介",
- "overview": "概覽",
- "top": "熱門排行",
- "stats": "統計數據", 
- "yourPlaylists": "你的播放清單",
- "playlists": "播放清單",
- "noPlaylists": "沒有播放清單",
- "history": "歷史紀錄",
- "recentSearch": "您最近的搜尋結果將顯示在此處",
- "search": "搜尋",
- "explore": "探索",
- "settings": "設定",
- "newPlaylist": "建立播放清單",
- "needMoreTracksPlaylist": "熱門曲目清單至少要有5首才能建立",
- "manageSyncedPlaylists": "管理同步播放清單",
- "manageSyncedPlaylistsDesc": "最多可同時同步3個播放清單。點擊同步圖標可對清單啟用/停用同步。", 
-  "lastSyncedAt": "Last synced on {date} at {time}",
-  "@lastSyncedAt": {
-    "placeholders": {
-      "date": {
-        "type": "String",
-        "example": "03/14"
-      },
-      "time": {
-        "type": "String",
-        "example": "11:00"
-      }
-    }
-  },
-  "timeDays": "Time in days",
-  "timeFrame": "Time frame",
-  "playlistSyncDesc": "When enabled, the playlist will be synchronised automatically when your top tracks change.",
-  "playlistSyncTimeDesc": "Select the time period the playlist will use your top tracks from. For example, when set to {days} days, your top tracks from the past {days} days will be taken every night and added to your playlist.",
-  "@playlistSyncTimeDesc": {
-    "placeholders": {
-      "days": {
-        "type": "int",
-        "format": "decimalPattern",
-        "example": "30"
-      }
-    }
-  },
- "playlistLimitLength": "限制播放清單長度",
- "playlistLimitLengthDesc": "選擇播放清單的最大長度。若數據量不足，播放清單的長度可能會小於設定值。",
- "playlistLimitToLong": "播放清單不能包含超過250個項目。",
- "playlistSyncEnabled": "已啟用播放清單同步",
- "playlistSyncDisabled": "已停用播放清單同步",
- "playlistSyncDisableDesc": "確定要停止同步此播放清單? 除非重新啟用同步，否則會保持目前的狀態。",
- "playlistRemoveDesc": "確定要刪除這個播放清單嗎? 這也會同步刪除 Spotify 上的播放清單。此操作無法復原。", 
- "share": "分享",
- "shareOptions": "分享選項",
- "shareSummary": "摘要", 
-  "shareGrid": "{size} 網格",
-  "@shareGrid": {
-    "placeholders": {
-      "size": {
-        "type": "String",
-        "example": "5x5"
-      }
-    }
-  },
-  "shareTop": "排行前 {size}",
-  "@shareTop": {
-    "placeholders": {
-      "size": {
-        "type": "String",
-        "example": "10"
-      }
-    }
-  },
-  "shareYourSummary": "Your summary",
-  "shareTop10": "Top 10 {contentType, select, tracks{tracks} albums{albums} artists{artists} other{{contentType}}}",
-  "@shareTop10": {
-    "placeholders": {
-      "contentType": {
-        "type": "String",
-        "example": "albums"
-      }
-    }
-  },
-  "shareTypeGrid": "{size} grid of {contentType, select, tracks{tracks} albums{albums} artists{artists} other{{contentType}}}",
-  "@shareTypeGrid": {
-    "placeholders": {
-      "contentType": {
-        "type": "String",
-        "example": "albums"
-      },
-      "size": {
-        "type": "String",
-        "example": "4x4"
-      }
-    }
-  },
- "shareCustomizationOptions": "自訂選項",
- "shareShowUsername": "顯示使用者名稱",
- "shareAppBranding": "App 品牌標誌",
- "shareBackgroundColour": "背景顏色",
- "settingsLayoutContentTitle": "版面與內容",
- "statsSettings": "統計數據設定",
- "orderTopList": "熱門排行排序方式",
- "orderTopBy": "依據項目排序熱門列表", 
- "orderItemsBy": "依據項目排序方式",
- "orderByNotice": "此設定會變更「熱門」分頁上項目位置的計算方式。",
- "machineLearning": "Spotify 的演算法",
- "machineLearningDesc": "Spotify 的演算法會對項目進行排序。不會顯示每個項目的播放次數。",
- "count": "播放次數",
- "countDesc": "依據播放次數排序項目。",
- "timePlayed": "播放時間",
- "timePlayedDesc": "依據聆聽曲目所花的時間排序項目。",
- "notEnoughMusicListened": "您似乎尚未聆聽足夠的音樂來計算任何統計數據",
- "delayedStats": "注意：聆聽和計算這些統計數據之間可能會有幾個小時的延遲",
- "noImg": "沒有圖片",
- "notEnoughData": "數據不足",
- "forAdvancedStats": "計算進階統計數據", 
- "fourWeeks": "4 週",
- "sixMonths": "6 個月",
- "lifetime": "全部時間",
- "pastHours": "過去 {count} 小時", 
-  "@pastHours": {
-    "placeholders": {
-      "count": {
-        "type": "int",
-        "example": "5"
-      }
-    }
-  },
-  "pastWeeks": "過去 {count} 週",
-  "@pastWeeks": {
-    "placeholders": {
-      "count": {
-        "type": "int",
-        "example": "5"
-      }
-    }
-  },
-  "pastDays": "過去 {count} 天",
-  "@pastDays": {
-    "placeholders": {
-      "count": {
-        "type": "int",
-        "example": "5"
-      }
-    }
-  },
-  "pastMonths": "過去 {count} 月",
-  "@pastMonths": {
-    "placeholders": {
-      "count": {
-        "type": "int",
-        "example": "5"
-      }
-    }
-  },
-  "percentageTrait": "of your tracks are {trait, select, danceable{danceable} acoustic{acoustic} energetic{energetic} loud{loud} instrumental{instrumental} lively{lively} speechful{speechful} other{{trait}}}",
-  "@percentageTrait": {
-    "placeholders": {
-      "trait": {
-        "type": "String",
-        "example": "energetic"
-      }
-    }
-  },
- "past": "過去 ", 
- "danceable": "適合跳舞的",
- "acoustic": "原聲的", 
- "energetic": "充滿活力的",
- "loud": "大聲的",
- "instrumental": "純音樂的",
- "lively": "輕快的",
- "speechful": "以言語為主的", 
- "valence": "情緒價", 
- "popularity": "人氣度",
- "genres": "音樂流派",
- "genresLowercase": "音樂流派", 
-  "genreLowercase": "流派",
-  "genreChildren": "子流派",
-  "related": "相關",
-  "topGenreArtists": "您最喜歡的流派是 {genre}，出現在您的 {count} 位藝人中",
-  "@topGenreArtists": {
-    "placeholders": {
-      "genre": {
-        "type": "String",
-        "example": "pop"
-      },
-      "count": {
-        "type": "String",
-        "example": "26,392"
-      }
-    }
-  },
-  "topGenreStreams": "{user, select, current{Your} other{Their}} top genre is {genre}, appearing in {count} of {user, select, current{your} other{their}} streams",
-  "@topGenreStreams": {
-    "placeholders": {
-      "genre": {
-        "type": "String",
-        "example": "pop"
-      },
-      "count": {
-        "type": "int",
-        "format": "decimalPattern",
-        "example": "26,392"
-      },
-      "user": {
-        "type": "String",
-        "example": "current"
-      }
-    }
-  },
-  "welcome": "歡迎!",
-  "welcomeDesc": "請登入您的 Spotify 帳户以繼續",
-  "welcomeButton": "登入",
-  "demo": "演示",
-  "loginSuccess": "成功登入",
-  "nowPlaying": "正在播放於 {platform}",
-  "@nowPlaying": {
-    "placeholders": {
-      "platform": {
-        "type": "String",
-        "example": "Spotify"
-      }
-    }
-  },
-  "nowPaused": "暫停中",
-  "recentListening": "最後播放於 {platform}",
-  "@recentListening": {
-    "placeholders": {
-      "platform": {
-        "type": "String",
-        "example": "Spotify"
-      }
-    }
-  },
-  "recentListeningNoPlatform": "上次播放",
-  "recentlyPlayed": "最近播放於 {platform}",
-  "@recentlyPlayed": {
-    "placeholders": {
-      "platform": {
-        "type": "String",
-        "example": "Spotify"
-      }
-    }
-  },
- "recentlyPlayedNoPlatform": "最近播放",
- "more": "更多",
- "top99": "想查看您的前 99 名嗎？",
- "plusTease": "升級至 stats.fm Plus",
- "plusForTopAlbums": "升級 stats.fm Plus 以查看您最常播放的專輯榜單",
- "notEnoughDataList": "目前無足夠資料生成列表",
- "noStreams": "找不到播放記錄",
- "ofTracksAre": "您的曲目中有 ",
- "private": "私人",
- "friendsPrivate": "使用者已將此資訊設為私人。",
- "messagePrivate": "此使用者已將隱私設定設為僅限朋友可以傳送訊息。",
-  "public": "公開",
-  "collaborative": "協作",
-  "audioFeatures": "音頻特徵",
-  "audioFeaturesUnavailable": "這首曲目的特徵不可用 :(",
-  "audioAnalysis": "音頻分析",
-  "key": "主調",
-  "overallLoudness": "整體音量",
-  "mode": "音調",
-  "@mode": {
-    "description": "Music related"
-  },
-  "minor": "小調",
-  "@minor": {
-    "description": "Music related"
-  },
-  "major": "大調",
-  "@major": {
-    "description": "Music related"
-  },
-  "timeSignature": "拍號",
-  "@timeSignature": {
-    "description": "Music related"
-  },
-  "bpm": "BPM",
-  "times": "次",
-  "pop0to10": "人氣 (0 - 10)",
-  "popScore": "人氣值",
- "beats": "節拍",
- "follow": "追蹤",
- "unfollow": "取消追蹤",
- "mostStreamedTracks": "最多次播放的曲目",
- "mostStreamedTrack": "最多次播放的曲目",
- "mostStreamedArtist": "最多次播放的藝人",
- "songsFromInLast50": "在過去50次聆聽中，您所播放的這位藝人曲目數",
- "ofMostStreamedOfTime": "在{when}中, 您播放次數最多的 {type, select, tracks{曲目} artists{藝人} other{{type}}} ", 
-  "@ofMostStreamedOfTime": {
-    "placeholders": {
-      "type": {
-        "type": "String",
-        "example": "tracks"
-      },
-      "when": {
-        "type": "String",
-        "example": "sixMonths"
-      }
-    }
-  },
-  "ofMostStreamedOfTimeDesc": "{item} is number #{number} of your most streamed {type, select, tracks{tracks} artists{artists} other{{type}}} {when, select, fourWeeks{of the past 4 weeks} sixMonths{of the past 6 months} lifetime{of all time} other{{when}}}.",
-  "@ofMostStreamedOfTimeDesc": {
-    "placeholders": {
-      "item": {
-        "type": "String",
-        "example": "Rick Astley"
-      },
-      "number": {
-        "type": "int",
-        "example": "69"
-      },
-      "type": {
-        "type": "String",
-        "example": "tracks"
-      },
-      "when": {
-        "type": "String",
-        "example": "sixMonths"
-      }
-    }
-  },
-  "timesTrackByOfTime": "times {artist} appeared in your top {count} tracks {when, select, fourWeeks{of the past 4 weeks} sixMonths{of the past 6 months} lifetime{of all time} other{{when}}}",
-  "@timesTrackByOfTime": {
-    "placeholders": {
-      "artist": {
-        "type": "String",
-        "example": "Rick Astley"
-      },
-      "count": {
-        "type": "int",
-        "example": "250"
-      },
-      "when": {
-        "type": "String",
-        "example": "sixMonths"
-      }
-    }
-  },
-  "timesTrackByOfTimeDesc": "The number of times a song by {artist} appeared in your top {count} tracks {when, select, fourWeeks{of the past 4 weeks} sixMonths{of the past 6 months} lifetime{of all time} other{{when}}}.",
-  "@timesTrackByOfTimeDesc": {
-    "placeholders": {
-      "artist": {
-        "type": "String",
-        "example": "Rick Astley"
-      },
-      "count": {
-        "type": "int",
-        "example": "250"
-      },
-      "when": {
-        "type": "String",
-        "example": "sixMonths"
-      }
-    }
-  },
-  "timesAlbumByOfTime": "times {album} appeared in your top {count} tracks {when, select, fourWeeks{of the past 4 weeks} sixMonths{of the past 6 months} lifetime{of all time} other{{when}}}",
-  "@timesAlbumByOfTime": {
-    "placeholders": {
-      "album": {
-        "type": "String",
-        "example": "A Moment Apart"
-      },
-      "count": {
-        "type": "int",
-        "example": "250"
-      },
-      "when": {
-        "type": "String",
-        "example": "sixMonths"
-      }
-    }
-  },
-  "timesAlbumByOfTimeDesc": "The number of times the album {album} appeared in your top {count} tracks {when, select, fourWeeks{of the past 4 weeks} sixMonths{of the past 6 months} lifetime{of all time} other{{when}}}.",
-  "@timesAlbumByOfTimeDesc": {
-    "placeholders": {
-      "album": {
-        "type": "String",
-        "example": "A Moment Apart"
-      },
-      "count": {
-        "type": "int",
-        "example": "250"
-      },
-      "when": {
-        "type": "String",
-        "example": "sixMonths"
-      }
-    }
-  },
-  "timesInLast": "times {item} appeared in your last {count} streams",
-  "@timesInLast": {
-    "placeholders": {
-      "item": {
-        "type": "String",
-        "example": "Rick Astley"
-      },
-      "count": {
-        "type": "int",
-        "example": "250"
-      }
-    }
-  },
-  "timesInLastDesc": "The number of times {type, select, track{{title}} artist{a song by {title}} other{{title}}} appeared in your last {count} streams.",
-  "@timesInLastDesc": {
-    "placeholders": {
-      "type": {
-        "type": "String",
-        "example": "track"
-      },
-      "title": {
-        "type": "String",
-        "example": "Rick Astley"
-      },
-      "count": {
-        "type": "int",
-        "example": "250"
-      }
-    }
-  },
-  "popArtistDesc": "The popularity of the artist. The value will be between 0 and 10, with 10 being the most popular. The artist’s popularity is calculated from the popularity of all the artist’s tracks.",
-  "followersCaps": "Followers",
-  "followers": "followers",
-  "followersOf": "The total number of people that follow {artist}",
-  "@followersOf": {
-    "placeholders": {
-      "artist": {
-        "type": "String",
-        "example": "Rick Astley"
-      }
-    }
-  },
- "relatedArtists": "相關藝人",
- "noRelatedArtists": "沒有相關藝人",
- "albumContent": "專輯內容",
- "albumType": "專輯類型",
- "albumTypeDesc": "專輯類型，可以是單曲、合輯或完整專輯",
- "owner": "擁有者",
- "ofMostStreamedTracks": "最多次播放的曲目",
- "trackLength": "曲目長度",
- "recentStreams": "最近播放",
- "timesStreamedLast50": "在過去50次聆聽中，您播放此曲目的次數",
- "popTrackDesc": "曲目人氣度介於0~10，其中10代表最受歡迎。該指標是透過演算法計算，主要根據總播放次數以及最近の播放情況所得。一般來說，近期熱播歌曲相較過往熱播歌曲人氣度更加分。重複曲目（例如一首曲目同時收錄於單曲與專輯）會獨立評分。藝人與專輯人氣度則由曲目人氣度計算推導而出。注意：人氣度的更新可能稍慢於實際熱度，不是即時計算的。",
- "lyrics": "歌詞",
- "lyricsFail": "此曲目沒有可用的歌詞 :‎(",
- "getPlusForLyrics": "升級 stats.fm Plus 檢視歌詞",
- "clickToOpenLyrics": "點擊查看歌詞",
- "playlistContent": "播放清單內容",
- "playlistMaxTracksLimit": "技術限制，含有超過250首歌曲的播放清單會在 stats.fm 上顯示上限250首歌曲。",
- "logout": "登出",
- "confirmation": "確定嗎?",
- "logoutDesc": "不會遺失資料，但需重新登入",
- "aboutSpotistats": "關於 stats.fm",
- "username": "使用者名稱",
-  "email": "電子郵箱",
-  "country": "國家/地區",
-  "bio": "關於我",
-  "pronouns": "代稱",
-  "loadingPronouns": "正在讀取可用的代稱...",
-  "pronounsCredits": "由 https://pronouns.page 提供稱呼列表",
-  "bRemoveAds": "移除所有廣告",
-  "accessInstantly": "立即體驗",
-  "accessAfterImport": "匯入長期串流紀錄後體驗",
-  "onetimePurchase": "(一次性購買)",
-  "purchasePending": "感謝您的購買。Google 或 Apple 正在驗證您的購買項目，驗證完成後您即可暢享 Plus 會員的各種功能。如果這個狀態持續超過一天，請聯繫我們 :)",
-  "plusForSupport": "如果您想支持本應用程式並讓我們持續開發新功能，請考慮購買 stats.fm Plus 會員。您只需要付費一次。",
- "bTop99": "熱門 99  取代熱門 50 藝人/曲目",
- "bTopAlbums": "查看熱門專輯",
- "bPlaylistSync": "播放清單同步", 
-  "language": "語言",
-  "translationHelp": "若您想幫忙翻譯，請到訪https://translate.stats.fm",
-  "moreInfo": "更多資訊",
-  "legal": "法律聲明",
-  "importantNote": "重要注意事項",
-  "importantNotePlus": "stats.fm Plus 會員並非 Spotify 會員。購買 stats.fm Plus 會員僅會解鎖本應用程式的額外福利，並不包含 Spotify 會員資格。\n\n- 您只需要付費一次\n- stats.fm Plus 會員將會綁定您的 Spotify 帳戶",
-  "understood": "我已了解",
-  "error": "錯誤",
-  "errorSpotifyConnectionUnknown": "連結至 Spotify 時發生未知的錯誤，請稍候再試。如果持續發生此狀況，請聯繫我們 :)",
-  "errorLoggedOutUnknown": "由於發生未知的錯誤，您已被登出。請重新登入。",
-  "forPlats": "給 iOS & Android",
-  "errorConnectingSpotistats": "連接至 stats.fm 伺服器時出現錯誤",
-  "notSaved": "此{type, select, track{曲目} artist{藝人} album{專輯} other{項目}}目前無法使用",
-  "@notSaved": {
-    "placeholders": {
-      "type": {
-        "type": "String",
-        "example": "album"
-      }
-    }
-  },
-  "notSavedDesc": "此{type, select, track{曲目} artist{藝人} album{專輯} other{項目}}還未被分析並儲存至資料庫，請完成播放後再試一次。",
-  "@notSavedDesc": {
-    "placeholders": {
-      "type": {
-        "type": "String",
-        "example": "album"
-      }
-    }
-  },
-  "errorTryAgain": "請稍後重試。若此錯誤的情況仍然持續，請聯繫 error@stats.fm。",
-  "checkStatus": "查看狀態",
-  "hideAds": "購買 stats.fm Plus 以移除廣告",
-  "@hideAds": {
-    "description": "Please keep this as short as possible"
-  },
-  "adError": "沒有合適的廣告 :(",
-  "invalidUrl": "無效網址：{url}",
-  "@invalidUrl": {
-    "placeholders": {
-      "url": {
-        "type": "String",
-        "example": "https://spotistats.app/users/blabla"
-      }
-    }
-  },
-  "publicData": "選擇你想公開在個人檔案的數據",
-  "userNotSpotistats": "這個使用者並未使用 stats.fm",
-  "shareInfo": "在設定更改您想分享的對象",
-  "editProfile": "編輯個人資料",
-  "shareProfile": "分享個人資料",
-  "updatedSettings": "成功更新設定",
-  "errorSettings": "更新設定時發生錯誤",
-  "friends": "好友",
-  "incomingRequests": "收到的好友請求",
-  "noIncomingRequests": "未收到好友請求",
-  "outgoingRequests": "發送的好友請求",
-  "noOutgoingRequests": "未發送好友請求",
-  "noFriends": "暫無好友",
-  "trySearchFriends": "您可使用左上方的搜索按鈕查找好友",
-  "cantFindWho": "找不到好友？",
-  "makeSureFriend": "確保您的好友已擁有 stats.fm 帳號，並且更新至最新版本",
-  "cancelRequest": "取消好友請求",
-  "cancelledRequest": "好友請求已取消",
- "denyRequest": "拒絕好友請求",
- "deniedRequest": "已拒絕好友請求",
- "acceptRequest": "接受好友請求",
- "acceptedRequest": "已接受好友請求",
- "sendRequest": "傳送好友請求", 
-  "sentRequest": "好友請求已發送",
-  "ifYouRemove": "若您移除好友 {username}，您需要再次發送好友請求才能恢復好友關係",
-  "@ifYouRemove": {
-    "placeholders": {
-      "username": {
-        "type": "String",
-        "example": "Gemairo"
-      }
-    }
-  },
- "removeFriend": "移除好友",
- "removedFriend": "好友已移除",
- "privateAccount": "私人帳戶",
- "sendToSee": "傳送好友請求給 {username} 以查看他們的統計數據", 
-  "@sendToSee": {
-    "placeholders": {
-      "username": {
-        "type": "String",
-        "example": "Gemairo"
-      }
-    }
-  },
-  "fullyPrivate": "{username} is not currently sharing their stats with anybody",
-  "@fullyPrivate": {
-    "placeholders": {
-      "username": {
-        "type": "String",
-        "example": "Gemairo"
-      }
-    }
-  },
-  "userDoesntShare": "{user} doesn't share this",
-  "@userDoesntShare": {
-    "placeholders": {
-      "user": {
-        "type": "String",
-        "example": "Sjoerd"
-      }
-    }
-  },
- "importRequired": "需要匯入資料",
- "importRequiredDialog": "此功能所需的資料無法從串流平台API 取得，您必須先匯入播放歷史才能使用。我們強烈建議您匯入資料，這也會解鎖許多其他 (未來) 功能 :)",
- "importRequiredDialogOther": "此功能所需的資料無法從串流平台API 取得，對方必須先匯入播放歷史才能使用。",
- "importRequiredChangeSetting": "您需要匯入完整播放歷史才能更改此設定，匯入後請再試一次。",
- "importRequiredChangeSettingOther": "對方需要匯入完整播放歷史才能更改此設定。",
- "importRequiredOtherDesc": "對方必須匯入資料，此區塊才會顯示內容。",
- "plusRequired": "升級 Plus 版本",
- "plusRequiredDialog": "您必須匯入完整播放歷史，才能為這些統計數據選擇自訂時間範圍，並查看所選期間的總聆聽時間。Plus 版本已包含匯入功能。",
- "plusRequiredDialogOther": "對方必須匯入完整播放歷史，才能為這些統計數據選擇自訂時間範圍，並查看所選期間的總聆聽時間。對方需要升級 Plus 版本才能匯入資料。",
- "plusRequiredChangeSetting": "要變更此設定，您需要匯入完整的播放歷史紀錄，Plus 版本已包含匯入功能。",
- "plusRequiredChangeSettingOther": "要變更此設定，對方需要匯入完整的播放歷史紀錄，他們可以升級 Plus 版本來完成。",
- "switchToCount": "切換為播放次數",
- "switchToCountDialog": "此功能需要的資料無法從串流平台 API 取得，請切換為依「播放次數」或「時間」排序以使用此功能",
- "switchToCountDialogOther": "對方需要切換為依「播放次數」或「時間」排序，此功能所需資料無法從 Spotify API 取得",
- "viewTotalCountImport": "匯入您完整的播放歷史紀錄，即可查看您的總播放次數和播放時間。",
- "viewTotalCountSwitch": "若要查看您總播放次數和播放時間，請切換排序類型為「播放次數」或「播放時間」。",
- "listeningClocks": "聽音樂時鐘",
- "betaCaps": "測試版",
- "liveCaps": "即時", 
- "welcomeToBeta": "歡迎使用 Beta {version} 版",
- "@welcomeToBeta": {
-  "placeholders": {
-   "version": {
-    "type": "String",
-    "example": "1.2.7+400121" 
-   }
-  }
- },
- "readThis": "我已詳細閱讀",
- "betaReleaseNotesWarning": "請先閱讀 Beta 版本說明 ",
- "betaReleaseNotesWarningDesc": "請先行閱讀 Beta 版本說明，並點擊「我已詳細閱讀」以繼續。",
- "globalChartsInfo": "全球排行展示特定期間的熱門曲目、藝人與專輯。排名是由 stats.fm 升級到 Plus 版本並匯入收聽歷史的用戶統計數據中產生。",
- "swipefyChartsInfo": "Swipefy 排行榜展示特定期間的熱門曲目、藝人與專輯。排名是由 Swipefy 所有用戶的瀏覽紀錄而產生。",
- "accountAndPrivacy": "帳戶與隱私設定", 
- "privacySettings": "隱私設定",
- "profile": "個人檔案",
- "yourBioPronouns": "個人簡介與稱謂",
- "currentlyPlayingTitle": "正在播放",
- "currentlyPlayingDesc": "您目前正在播放的曲目",
- "recentlyPlayedTitle": "最近播放",
- "recentlyPlayedDesc": "您最近 50 首播放的曲目",
- "yourTop": "您的熱門 {type, select, tracks{曲} artists{藝人} albums{專輯} genres{流派} other{項目}}",
- "@yourTop": {
-  "placeholders": {
-   "type": {
-    "type": "String",
-    "example": "tracks" 
-   }
-  }
- },
- "streamsDesc": "您的個別收聽紀錄 (全部或依藝人、曲目或專輯進行篩選)",
- "streamStatsTitle": "收聽紀錄統計",
- "streamStatsDesc": "包含數據統計圖表，如單首播放次數、總聆聽分鐘數等",
- "deleteAccountTitle": "刪除帳號與相關所有資料",
- "deleteAccountDesc": "如需刪除帳戶與相關資料，請前往 stats.fm/account/privacy 。點擊下方按鈕以前往該頁面。",
- "deleteAccountButton": "刪除帳號",
- "accountInfo": "帳戶資訊",
- "customURL": "自訂網址",
- "copy": "複製",
- "copied": "已複製到剪貼板",
- "notifications": "通知",
- "notificationSettings": "通知設定",
- "friendsNotificationsDesc": "收到或已接受的好友請求",
- "weeklyNotifications": "週報",
- "weeklyNotificationsDesc": "每周摘要報告，包含總聆聽時間與最佳曲目/藝人統計",
- "monthlyNotifications": "月報",
- "monthlyNotificationsDesc": "每月摘要報告，包含總聆聽時間與最佳曲目/藝人統計",
- "importsNotificationsDesc": "當檔案處理完畢",
- "updatesNotifications": "App 更新",
- "updatesNotificationsDesc": "當我們有新消息 (例如軟體更新)",
- "appSettings": "App 設定",
- "settingsAlgoTitle": "統計數據與演算法",
- "settingsAppearanceTitle": "語言與主題",
- "settingsFeedbackTitle": "建議或回饋？",
- "settingsBugReportsTitle": "提交錯誤回報",
- "settingsDatabaseStats": "資料庫統計",
- "users": "用戶",
- "plusUsers": "Plus 版本用戶",
- "diffPastHour": "過去一小時成長 +{diff}", 
- "@diffPastHour": {
-  "placeholders": {
-   "diff": {
-    "type": "String",
-    "example": "26,392" 
-   }
-  }
- },
- "socials": "社群",
- "delete": "刪除",
- "view": "查看",
- "viewMore": "查看更多",
- "viewLess": "收起",
- "rebrandDesc": "由於多種考量(例如將支援Apple Music)，是時候使用一個新名稱了。未來幾週會逐漸完成更名。",
- "reportContent": "檢舉內容",
- "reportContentDesc": "點擊檢舉即可報告此內容。違規內容不容留存在 Stats.fm 上，您的檢舉能協助我們保持 App 環境健康 :‎)", 
- "startTheConversation": "展開對話",
- "startTheConversationDesc": "和對方討論你們都喜歡的藝人或音樂 :‎)",
- "startTheConversationArtistsDesc": "過去六個月你們共同喜好 {artists} 位藝人!", 
- "@startTheConversationArtistsDesc": {
-  "placeholders": {
-   "artists": {
-    "type": "int",
-    "example": "10" 
-   }
-  }
- },
- "writeSomething": "說些什麼",
- "soulmates": "聽歌同好",
- "soulmatesPrivacyDesc": "在聽歌同好頻道顯示自己，讓他人匹配認識你。",
- "records": "紀錄",
- "recordsDesc": "你可以透過成為前三名聽眾來贏得紀錄! (需擁有 stats.fm Plus 版本，並匯入歷史紀錄! 可能需要等最多一小時才會顯示你的紀錄。)", 
- "recordHistory": "紀錄歷史",
- "recordEarnedTime": "{date} 於 {time} 獲得", 
- "@recordEarnedTime": {
-  "placeholders": {
-   "date": {
-    "type": "String",
-    "example": "11/11/11" 
-   },
-   "time": {
-    "type": "String",
-    "example": "11/11/11" 
-   }
-  }
- },
- "recordEarned": "獲得: {date}", 
- "@recordEarned": {
-  "placeholders": {
-   "date": {
-    "type": "String",
-    "example": "11/11/11" 
-   }
-  }
- },
- "recordFirstEarned": "初次獲得 : {date}", 
- "@recordFirstEarned": {
-  "placeholders": {
-   "date": {
-    "type": "String",
-    "example": "11/11/11" 
-   }
-  }
- },
- "recordInfo": "紀錄資訊",
- "recordStatusActive": "有效",
- "recordStatusLost": "無效",
- "recordStatus": "紀錄狀態",
- "recordStatusDesc": "紀錄分為「有效」與「無效」。如果不再是該藝人的Top1聽眾，就會失去該紀錄，反之可再取得它。", 
- "platinumRecord": "白金",
- "platinumRecordDesc": "人氣值超過7.5的藝人前1名聽眾",
- "otherRecordDesc": "該藝人 Top#{count} 聽眾",
- "@otherRecordDesc": {
-  "placeholders": {
-   "count": {
-    "type": "String",
-    "example": "1" 
-   }
-  }
- }, 
- "goldRecord": "金牌",
- "silverRecord": "銀牌",
- "bronzeRecord": "銅牌",
- "statsFMSoulmates": "stats.fm 聽歌同好",
- "findSoulmates": "尋找聽歌同好",
- "soulmatesDesc": "透過進階 AI 演算法，現在可以搜尋與自己音樂品味相近的用戶。",
- "soulmatesDescSmall": "找出其他 stats.fm 用戶，與你共享相同的音樂品味。",
- "soulmatesRefreshingDesc": "更新配對資料可能需要 60 秒，請稍候！",
- "soulmatesRefresh": "更新搜尋結果",
- "soulmatesRefreshDesc": "重新配對你的聽歌同好。每 24 小時只能進行一次。",
- "soulmatesAlreadyRefreshed": "已更新",
- "soulmatesAlreadyRefreshedDesc": "每 24 小時只能進行一次更新。 {hours} 小時後可再次更新。",
- "@soulmatesAlreadyRefreshedDesc": {
-  "placeholders": {
-   "hours": {
-    "type": "String",
-    "example": "10" 
-   }
-  }
- },
- "soulmatesOptions": "聽歌同好選項",
- "soulmatesByCountry": "依國家篩選",
- "soulmatesPlusOnly": "僅顯示 Plus 用戶",
- "global": "全球",
- "apply": "套用",
- "refresh": "刷新",
- "sendChatMessage": "送出訊息",
- "matchPercentage": "匹配度 {score}%", 
- "@matchPercentage": {
-  "placeholders": {
-   "score": {
-    "type": "String",
-    "example": "75.4%" 
-   }
-  }
- },
- "soulmatesLoading": "伺服器正全力於 {users} 百萬用戶中為你找出配對，可能需要約 10 秒鐘。",
- "@soulmatesLoading": {
-  "placeholders": {
-   "users": {
-    "type": "String",
-    "example": "5" 
-   }
-  }
- },
- "noMatches": "找不到配對 :‎)",
- "checkLater": "晚點再試看看",
- "you": "你",
- "buyPlus": "升級 stats.fm Plus",
- "moreInfoPerks": "更多資訊與福利",
- "restorePurchases": "回復先前購買",
- "plusThanks1": "感謝您購買 stats.fm Plus！",
- "plusThanks2V2": "真的，謝謝！有你們的支持才讓我有動力持續為大家開發新功能，尤其是為 Plus 用戶提供的專屬功能。若能花一點時間在商店留下評價我會更有動力的唷 :‎) \n\n再次感謝！\n^Sjoerd",
- "alreadyPlus": "你已經擁有 stats.fm Plus :‎)",
- "free": "免費版",
- "plus": "Plus 版",
- "afterImport": "匯入後",
- "advancedSort": "進階排序",
- "customTimeframes": "自訂時間區間",
- "importLifetimeHistory": "匯入永久收聽歷史",
- "playcounts": "播放次數",
- "noAds": "無廣告",
- "premiumCharts": "進階排行榜",
- "weeklyMonthlySummaries": "週報/月報",
- "oneTimePurchaseLifetimeJoy": "一次購買，終身暢享",
- "privateUser": "私人用戶",
- "discover": "探索",
- "discoverDesc": "你的最愛曲目、藝人和專輯",
- "analyze": "分析",
- "analyzeDesc": "你的收聽習慣",
- "shareDesc": "與朋友分享及比較",
- "next": "下一步",
- "friendsLowercase": "好友",
- "topListeners": "頂尖聽眾",
- "topListenersInfo": "此排行榜目前只會顯示已升級 Plus 並匯入播放歷史的 stats.fm 用戶。以下條件滿足，才可名列榜中：\n1.  擁有 stats.fm Plus\n2. 已匯入永久播放歷史\n3. 已啟用排行榜隱私選項。",
- "friendsLeaderboard": "好友排行榜",
- "friendsLeaderboardDesc": "目前好友排行榜總排名 #{position}!",
- "@friendsLeaderboardDesc": {
-  "placeholders": {
-   "position": {
-    "type": "String",
-    "example": "5" 
-   }
-  }
- },
- "friendsLeaderboardInfo": "目前只會顯示已升級為 Plus 版本，並匯入永久播放歷史的好友。\n\n以下條件滿足，才可名列榜中：\n1. 擁有 stats.fm Plus\n2. 已匯入永久播放歷史\n3. 已啟用排行榜隱私選項。",
- "friendsLeaderboardEmpty": "找不到擁有播放紀錄的好友。",
- "importFiles": "匯入檔案",
- "importFilesDesc": "上傳收聽歷史資料檔案至 stats.fm",
- "spotifySupport": "Spotify 支援",
- "spotifyPrivacy": "Spotify 隱私",
- "importFileStatusReady": "準備上傳",
- "importFileStatusPending": "等待中",
- "importFileStatusUploading": "上傳中...",
- "importFileStatusUploaded": "成功上傳",
- "importFileStatusServerIssue": "失敗 (伺服器異常，請稍後再試)",
- "importSpotifyHistory": "匯入 Spotify 歷史",
- "importSpotifyHistoryDesc": "從 Spotify 取得你的播放歷史紀錄後，解壓縮資料夾並且選擇「Streaming_History_Audio」系列的 JSON 檔案，或選取 my_spotify_data.zip 檔案，之後就讓 App 自行幫你搞定一切吧。",
- "uploadQueue": "上傳等待區",
- "upload": "上傳", 
- "@upload": {
-  "description": "上傳等待區按鈕" 
- },
- "clear": "清除", 
- "@clear": {
-  "description": "清除等待區按鈕" 
- },
- "pickerDialogZip": "選擇你的 Spotify zip 檔",
- "importNoFilesQueue": "無檔案於等待區中",
- "import": "匯入",
- "invalidZip": "無效的 zip 檔案",
- "invalidZipDesc": "很可惜，App 暫無法分析此 zip 檔案，你可自行解壓縮檔案後挑選正確的 {fileName} 檔案匯入。", 
- "@invalidZipDesc": {
-  "placeholders": {
-   "fileName": {
-    "type": "String",
-    "example": "filename.json" 
-   }
-  }
- },
- "invalidFile": "{fileName} 不是有效的 Streaming_History_Audio json 檔案。",
- "@invalidFile": {
-  "placeholders": {
-   "fileName": {
-    "type": "String",
-    "example": "filename.json" 
-   }
-  }
- },
- "uploadFinished": "你的檔案正在處理中",
- "uploadFinishedDesc": "待檔案處理完成後，重新啟動 App 以獲得你的分析數據。\n\n一般檔案處理僅需片刻。你可以放心關閉 App，系統將於處理完畢後，發送通知與你。",
- "profilePictureUpdated": "已更新個人頭像",
- "profilePicturePhonePerms": "App 尚未取得使用相片之權限。",
- "profilePictureToLarge": "圖片太大。檔案需小於 10MB",
- "profilePictureGifPlus": "僅 stats.fm Plus 用戶可上傳 GIFs",
- "profilePictureCrop": "裁剪圖片像",
- "displayName": "顯示名稱",
- "chooseCustomUrl": "選擇專屬網址 🔥",
- "chooseCustomUrlDesc": "在被訂走之前趕快認領你的個人網址吧！你的名子說不定還沒人領哦！",
- "available": "可使用",
- "unavailable": "不可使用",
- "save": "儲存",
- "firstStreamed": "首次播放時間點 {time}", 
- "@firstStreamed": {
-  "placeholders": {
-   "time": {
-    "type": "String",
-    "example": "10:02" 
-   }
-  }
- }, 
-  "lastStreamed": "last streamed at {time}",
-  "@lastStreamed": {
-    "placeholders": {
-      "time": {
-        "type": "String",
-        "example": "10:02"
-      }
-    }
-  },
-  "noRecordsFound": "No records found",
-  "topListenersSubtitle": "You're the #{position} listener of this {type, select, track{track} artist{artist} album{album} other{item}}!",
-  "@topListenersSubtitle": {
-    "placeholders": {
-      "position": {
-        "type": "String",
-        "example": "100"
-      },
-      "type": {
-        "type": "String",
-        "example": "track"
-      }
-    }
-  },
-  "theyTopListenersSubtitle": "They are the #{position} listener for this {type, select, track{track} artist{artist} album{album} other{item}}!",
-  "@theyTopListenersSubtitle": {
-    "placeholders": {
-      "position": {
-        "type": "String",
-        "example": "100"
-      },
-      "type": {
-        "type": "String",
-        "example": "track"
-      }
-    }
-  },
-"notInTopListenersSubtitle": "您並不在前 1,000 名的聽眾排名中。",
-"theyNotInTopListenersSubtitle": "他們並不在前 1,000 名的聽眾排名中。",
-"importTopListenersSubtitle": "您需要導入相關資料才能顯示於此處。",
-"theyImportTopListenersSubtitle": "他們需要導入相關資料才能顯示於此處。",
-"otherUsersStats": "{name} 的統計資料",
-"@otherUsersStats": {
-"placeholders": {
-"name": {
-"type": "String",
-"example": "sjoerd"
+    "discover": "探索",
+    "swipes": "滑動",
+    "swipesLowercase": "{swipes, plural, other{滑動}}",
+    "@swipesLowercase": {
+        "placeholders": {
+            "swipes": {
+                "type": "int",
+                "example": "2"
+            }
+        }
+    },
+    "swipe": "滑動",
+    "social": "社交",
+    "collections": "收藏清單",
+    "profile": "個人資料",
+    "tracks": "曲目",
+    "albums": "專輯",
+    "album": "專輯",
+    "artists": "藝人",
+    "artist": "藝人",
+    "users": "使用者",
+    "settings": "設定",
+    "none": "無",
+    "dismiss": "取消",
+    "search": "搜尋",
+    "explore": "探索",
+    "tune": "曲調",
+    "liked": "喜歡",
+    "disliked": "不喜歡",
+    "usersLowercase": "{users, plural, other{使用者}}",
+    "@usersLowercase": {
+        "placeholders": {
+            "users": {
+                "type": "int",
+                "example": "2"
+            }
+        }
+    },
+    "yes": "是",
+    "no": "否",
+    "more": "更多",
+    "displayName": "顯示名稱",
+    "username": "使用者名稱",
+    "bio": "關於我",
+    "pronouns": "性別稱呼",
+    "loadingPronouns": "正在讀取可用的性別稱呼...",
+    "pronounsCredits": "由 https://pronouns.page 提供稱呼列表",
+    "editProfile": "編輯個人資料",
+    "shareProfile": "分享個人資料",
+    "add": "新增",
+    "accept": "接受",
+    "updatedSettings": "成功更新設定",
+    "errorSettings": "更新設定時發生錯誤",
+    "friends": "好友",
+    "share": "分享",
+    "fourWeeks": "4 週",
+    "sixMonths": "6 個月",
+    "lifetime": "所有時間",
+    "today": "今日",
+    "yesterday": "昨日",
+    "report": "回報",
+    "blockUser": "封鎖",
+    "unblockUser": "取消封鎖",
+    "blockedUser": "封鎖 {displayName}",
+    "@blockedUser": {
+        "placeholders": {
+            "displayName": {
+                "type": "String",
+                "example": "sjoerd"
+            }
+        }
+    },
+    "unblockedUser": "取消封鎖 {displayName}",
+    "@unblockedUser": {
+        "placeholders": {
+            "displayName": {
+                "type": "String",
+                "example": "sjoerd"
+            }
+        }
+    },
+    "reportContent": "檢舉內容",
+    "reportContentDesc": "單擊檢舉以回報此內容。 濫用內容不應成為 Swipefy 的一部分，使用您的檢舉我們可以保持應用程序的整潔 : )",
+    "swipesCount": "{count, plural, other{{count} 滑動}}",
+    "@swipesCount": {
+        "placeholders": {
+            "count": {
+                "type": "int",
+                "format": "decimalPattern",
+                "example": "50"
+            }
+        }
+    },
+    "likesCount": "{count, plural, other{{count} 喜歡}}",
+    "@likesCount": {
+        "placeholders": {
+            "count": {
+                "type": "int",
+                "format": "decimalPattern",
+                "example": "50"
+            }
+        }
+    },
+    "dislikesCount": "{count, plural, other{{count} 不喜歡}}",
+    "@dislikesCount": {
+        "placeholders": {
+            "count": {
+                "type": "int",
+                "format": "decimalPattern",
+                "example": "50"
+            }
+        }
+    },
+    "streamsCount": "{count, plural, other{{count} 播放}}",
+    "@streamsCount": {
+        "placeholders": {
+            "count": {
+                "type": "int",
+                "format": "decimalPattern",
+                "example": "50"
+            }
+        }
+    },
+    "minutes": "{count, plural, other{{count} 分鐘}}",
+    "@minutes": {
+        "placeholders": {
+            "count": {
+                "type": "int",
+                "format": "decimalPattern",
+                "example": "50"
+            }
+        }
+    },
+    "seconds": "{count, plural, other{{count} 秒}}",
+    "@seconds": {
+        "placeholders": {
+            "count": {
+                "type": "int",
+                "format": "decimalPattern",
+                "example": "50"
+            }
+        }
+    },
+    "tracksCount": "{count, plural, other{{count} 曲目}}",
+    "@tracksCount": {
+        "placeholders": {
+            "count": {
+                "type": "int",
+                "format": "decimalPattern",
+                "example": "50"
+            }
+        }
+    },
+    "artistsCount": "{count, plural, other{{count} 藝人}}",
+    "@artistsCount": {
+        "placeholders": {
+            "count": {
+                "type": "int",
+                "format": "decimalPattern",
+                "example": "50"
+            }
+        }
+    },
+    "friendsCount": "{count, plural, other{好友}}",
+    "@friendsCount": {
+        "placeholders": {
+            "count": {
+                "type": "int",
+                "format": "decimalPattern",
+                "example": "50"
+            }
+        }
+    },
+    "notEnoughData": "數據不足",
+    "tapEnterSearch": "點擊進入搜索",
+    "language": "語言",
+    "theme": "佈景主題",
+    "dark": "暗色",
+    "oled": "OLED",
+    "light": "亮色",
+    "system": "系统",
+    "accentColour": "主題色",
+    "colourGreen": "綠色",
+    "colourLime": "萊姆綠",
+    "colourOrange": "橘色",
+    "colourYellow": "淺黃色",
+    "colourBanana": "黃色",
+    "colourPoop": "深棕色",
+    "colourVeryRed": "淺紅色",
+    "colourRed": "紅色",
+    "colourPink": "粉紅色",
+    "colourUnicorn": "桃紫色",
+    "colourPurple": "紫色",
+    "colourBlurple": "藍紫色",
+    "colourBlue": "藍色",
+    "colourAzure": "天藍色",
+    "colourAqua": "水藍色",
+    "colourKindaDark": "灰藍色",
+    "colourTeal": "灰綠色",
+    "colourSlate": "灰色",
+    "colourStone": "墨綠色",
+    "colourGold": "金色",
+    "colourPeach": "陶色",
+    "colourWannabePeach": "膚色",
+    "colourWhite": "白色",
+    "defaultValue": "預設值",
+    "openBetaNotice": "此功能正處於公開測試版, 意味著你可能會遇到意料之外的漏洞。",
+    "translationHelp": "若您想幫忙翻譯，請到訪 https://translate.stats.fm",
+    "welcomeToBeta": "Beta version {version}",
+    "@welcomeToBeta": {
+        "placeholders": {
+            "version": {
+                "type": "String",
+                "example": "1.2.7+400121"
+            }
+        }
+    },
+    "confirmation": "是否確定？",
+    "cancelRequest": "取消好友請求",
+    "cancelledRequest": "好友請求已取消",
+    "denyRequest": "拒絕好友請求",
+    "deniedRequest": "好友請求已拒絕",
+    "acceptRequest": "接受好友請求",
+    "acceptedRequest": "好友請求已接受",
+    "sendRequest": "發送好友請求",
+    "sentRequest": "好友請求已發送",
+    "ifYouRemove": "If you want to become friends with {username} again later, you'll have to send a friend request again.",
+    "@ifYouRemove": {
+        "placeholders": {
+            "username": {
+                "type": "String",
+                "example": "Gemairo"
+            }
+        }
+    },
+    "remove": "移除",
+    "removeFriend": "移除好友",
+    "removedFriend": "好友已移除",
+    "profilePictureUpdated": "頭像已上傳",
+    "collectionPictureUpdated": "收藏圖片已上傳",
+    "profilePicturePhonePerms": "The app has insufficient permissions to access your photos.",
+    "profilePictureTooLarge": "圖片太大。 圖片必須小於 10MB.",
+    "profilePictureGifPlus": "Only stats.fm Plus users can upload GIFs.",
+    "profilePictureCrop": "裁切圖片",
+    "options": "選項",
+    "imageUpload": "上傳",
+    "profileImageUploadDesc": "Upload a new profile picture",
+    "collectionImageUploadDesc": "Upload a new collection picture",
+    "removeImage": "移除圖片",
+    "profileImageRemoveDesc": "Removes your profile picture from your account",
+    "profileImageRemoved": "Profile picture removed",
+    "collectionImageRemoveDesc": "Removes your collection picture",
+    "collectionImageRemoved": "Collection picture removed",
+    "cancel": "取消",
+    "ok": "確定",
+    "currentlyPlayingTitle": "正在播放",
+    "currentlyPlayingDesc": "您正在播放的歌曲",
+    "genres": "類型",
+    "error": "錯誤",
+    "deleteAccountTitle": "移除您的帳號以及與之關聯的全部資料",
+    "deleteAccountDesc": "如果要移除您的帳號以及所有與之關聯的資料，請前往 stats.fm/account/privacy 或是點擊下方的連結來前往。",
+    "deleteAccountButton": "移除我的帳號",
+    "relatedArtists": "相關的藝人",
+    "noRelatedArtists": "無相關藝人",
+    "albumContent": "專輯內容",
+    "streams": "播放次數",
+    "accountAndPrivacy": "帳戶與隱私",
+    "privacySettings": "隱私設定",
+    "settingsAccountDesc": "自訂您的個人檔案，管理您的隱私設定或移除您的帳戶。",
+    "settingsAlgoTitle": "狀態與演算法",
+    "settingsAlgoDesc": "更改排行列表的排序方式，更改你的時區以及其他內容。",
+    "settingsAppearanceTitle": "語言與主題",
+    "settingsAppearanceDesc": "變更這個應用程式的語言以及外觀",
+    "settingsLayoutContentTitle": "版面配置與內容",
+    "settingsLayoutContentDesc": "自訂應用程式的版面配置和其他內容.",
+    "legal": "法律聲明",
+    "logout": "登出",
+    "logoutDesc": "No data will be lost, but you'll have to log in again.",
+    "proAlgorithm": "%sPro%s algorithm",
+    "freeAlgorithm": "自由算法",
+    "discoverOutOfRecs": "你的建議用完了 :(",
+    "tryChangingTuneSettings": "嘗試更改一些曲調設置以發現更多！",
+    "tryChangingCustomSeeds": "嘗試更改您的自定義種子以發現更多！",
+    "tryChangingDiscoverFrom": "嘗試另一個{discoverFrom, select, track{曲目} album{專輯} artist{藝人} user{使用者} other{{discoverFrom}}}以發現更多曲目！",
+    "@tryChangingDiscoverFrom": {
+        "placeholders": {
+            "discoverFrom": {
+                "type": "String",
+                "example": "track"
+            }
+        }
+    },
+    "discoverBasedOn": "基於",
+    "discoverTracksFrom": "曲目來自",
+    "discoverLikedBy": "說讚的人",
+    "tuneSwipeFilters": "滑動篩選",
+    "tunePreviouslySwiped": "包括以前滑動過的曲目",
+    "tunePreviouslyStreamed": "包括以前播放過的曲目",
+    "tuneReleaseFilters": "發行篩選",
+    "tuneIncludeTrackRemixes": "包括曲目重新混音",
+    "tuneIncludeAcousticTrack": "包括曲目原聲版",
+    "tuneIncludeRadioEdits": "包括曲目電台版",
+    "tuneIncludeTrackMixes": "包括曲目混音版",
+    "tuneIncludeInstrumental": "包括曲目伴奏版",
+    "customSeeds": "自定義種子",
+    "customSeedsDesc": "Choose up to {count, plural, one{{count} artist or track} other{{count} artists or tracks}} for the algorithm to base the recommendations on.",
+    "@customSeedsDesc": {
+        "placeholders": {
+            "count": {
+                "type": "int",
+                "example": "15"
+            }
+        }
+    },
+    "excludeArtists": "排除藝人",
+    "excludeArtistsDesc": "選擇最多 {count, plural, other{{count} 位藝人}}從您的推薦中排除。",
+    "@excludeArtistsDesc": {
+        "placeholders": {
+            "count": {
+                "type": "int",
+                "example": "15"
+            }
+        }
+    },
+    "tuneAdvancedFilters": "進階篩選",
+    "collectionsFor": "收藏清單",
+    "noCollectionsFound": "未找到收藏清單",
+    "createCollection": "新增收藏清單",
+    "collectionCreated": "已建立收藏清單",
+    "likedTracks": "喜歡的曲目",
+    "dislikedTracks": "不喜歡的曲目",
+    "skippedTracks": "跳過曲目",
+    "actionTracksDesc": "查看您所有{action, select, like{喜歡} dislike{不喜歡} skip{跳過} other{{action}}}的曲目",
+    "@actionTracksDesc": {
+        "placeholders": {
+            "action": {
+                "type": "String",
+                "example": "tracks"
+            }
+        }
+    },
+    "noFriendsSwipefy": "Swipefy 上沒有朋友",
+    "noFriendsSwipefyDesc": "搜索以添加新好友，如果您在 stats.fm 上已有好友，請讓他們加入 Swipefy！",
+    "noFriends": "暫無好友",
+    "incomingRequests": "未收到好友請求",
+    "outgoingRequests": "未發送好友請求",
+    "inbox": "Friend requests",
+    "incoming": "收到",
+    "outgoing": "送出",
+    "swipeUp": "上滑",
+    "outOfRecsUser": "您的推薦已用完{displayName}",
+    "@outOfRecsUser": {
+        "placeholders": {
+            "displayName": {
+                "type": "String",
+                "example": "Gemairo"
+            }
+        }
+    },
+    "noMoreTracks": "沒有更多的曲目可以播放",
+    "swipeUpMore": "上滑查看更多！",
+    "statsfmCharts": "stats.fm 圖表",
+    "swipefyCharts": "Swipefy 圖表",
+    "trendingOnPlatform": "Find out what's trending on {platform} today",
+    "@trendingOnPlatform": {
+        "placeholders": {
+            "platform": {
+                "type": "String",
+                "example": "statsfm"
+            }
+        }
+    },
+    "playOnPlatform": "在 {platform} 上播放",
+    "@playOnPlatform": {
+        "placeholders": {
+            "platform": {
+                "type": "String",
+                "example": "Spotify"
+            }
+        }
+    },
+    "globalChartsInfo": "These global charts show the most popular tracks, artists and albums in the selected time frame. They're based on the stats of all stats.fm Plus users who have imported their streaming history.",
+    "swipesFor": "滑動於",
+    "noSwipes": "沒有找到滑動",
+    "likes": "喜歡",
+    "likesLowercase": "{likes, plural, other{喜歡}}",
+    "@likesLowercase": {
+        "placeholders": {
+            "likes": {
+                "type": "int",
+                "example": "2"
+            }
+        }
+    },
+    "dislikes": "不喜歡",
+    "dislikesLowercase": "{dislikes, plural, one{dislike} other{dislikes}}",
+    "@dislikesLowercase": {
+        "placeholders": {
+            "dislikes": {
+                "type": "int",
+                "example": "2"
+            }
+        }
+    },
+    "skips": "跳過",
+    "skipsLowercase": "{skips, plural, other{跳過}}",
+    "@skipsLowercase": {
+        "placeholders": {
+            "skips": {
+                "type": "int",
+                "example": "2"
+            }
+        }
+    },
+    "view": "檢視",
+    "viewMore": "查看更多",
+    "viewLess": "查看更少",
+    "removeCollectionConfirmation": "The collection will be deleted permanently.",
+    "manageSync": "管理同步",
+    "notSynced": "未同步",
+    "lastSynced": "Last sync: {time} ago",
+    "@lastSynced": {
+        "placeholders": {
+            "time": {
+                "type": "String",
+                "example": "5h"
+            }
+        }
+    },
+    "collectionSubtitle": "{privacy, select, public{公開} private{私人} other{{privacy}}} • {swipes, plural, other{{swipes} 滑動}}",
+    "@collectionSubtitle": {
+        "placeholders": {
+            "privacy": {
+                "type": "String",
+                "example": "public"
+            },
+            "swipes": {
+                "type": "int",
+                "format": "decimalPattern",
+                "example": "10"
+            }
+        }
+    },
+    "syncToPlatformPlaylist": "同步到 {platform} 播放清單",
+    "@syncToPlatformPlaylist": {
+        "placeholders": {
+            "platform": {
+                "type": "String",
+                "example": "Spotify"
+            }
+        }
+    },
+    "actionedSyncToPlatform": "{action, select, enabled{啟用} other{停用}}同步到 {platform}",
+    "@actionedSyncToPlatform": {
+        "placeholders": {
+            "action": {
+                "type": "String",
+                "example": "disabled"
+            },
+            "platform": {
+                "type": "String",
+                "example": "Spotify"
+            }
+        }
+    },
+    "collectionSyncDesc": "Automatically add these tracks to a playlist",
+    "pullUpMore": "Scroll further to load more",
+    "reachedTheEnd": "您已經到達盡頭了.",
+    "removeSwipeCollectionDesc": "這將從收藏清單中移除滑動。",
+    "noSwipesFound": "沒有找到滑動",
+    "failedToRemoveCollImg": "Failed to remove collection picture",
+    "collectionInfoUpdated": "收藏資訊已更新",
+    "editCollection": "發佈收藏清單",
+    "updateCollection": "更新收藏清單",
+    "name": "名稱",
+    "description": "簡介",
+    "optional": "選項",
+    "collNoNameError": "您的收藏清單需要一個名稱",
+    "alreadySeed": "You've already added this {type, select, track{track} artist{artist} other{{type}}} as a seed",
+    "@alreadySeed": {
+        "placeholders": {
+            "type": {
+                "type": "String",
+                "example": "track"
+            }
+        }
+    },
+    "customSeedAdded": "已添加自定義種子",
+    "customSeedRemoved": "已移除自定義種子",
+    "excludedArtistAdded": "This artist is now excluded",
+    "excludedArtistRemoved": "This artist is no longer excluded",
+    "maxSeedsReached": "You can only define up to {count, plural, one{{count} seed} other{{count} seeds}}",
+    "@maxSeedsReached": {
+        "placeholders": {
+            "count": {
+                "type": "int",
+                "example": "5"
+            }
+        }
+    },
+    "addSeedItemDesc": "Add a track or an artist to get started",
+    "removeSeed": "移除種子",
+    "removeSeedConfirmation": "你想從你的種子列表中移除{name} 嗎？",
+    "@removeSeedConfirmation": {
+        "placeholders": {
+            "name": {
+                "type": "String",
+                "example": "Dua Lipa"
+            }
+        }
+    },
+    "proRequiredExcludeArtists": "您需要高級版才能排除藝人",
+    "excludeArtistsMax": "您最多只能排除 {max,plural,other{{max} 位藝人}}",
+    "@excludeArtistsMax": {
+        "placeholders": {
+            "max": {
+                "type": "int",
+                "example": "15"
+            }
+        }
+    },
+    "addExcludeArtistDesc": "Add an artist to exclude",
+    "removeArtist": "移除藝人",
+    "removeExcludedArtistConfirmation": "Would you like to remove {name} from your exclusion list?",
+    "@removeExcludedArtistConfirmation": {
+        "placeholders": {
+            "name": {
+                "type": "String",
+                "example": "Dua Lipa"
+            }
+        }
+    },
+    "tuneDanceability": "適合跳舞",
+    "slow": "慢速",
+    "dancable": "Danceable",
+    "tuneEnergy": "能量",
+    "easy": "放鬆",
+    "energetic": "充滿能量",
+    "tuneAcousticness": "原聲樂器",
+    "electric": "電子",
+    "acoustic": "原聲",
+    "tuneValence": "歌曲價態",
+    "negative": "消極",
+    "positive": "積極",
+    "tuneInstrumentalness": "樂器性",
+    "instrumental": "樂器",
+    "vocal": "人聲",
+    "tuneLiveness": "現場感",
+    "studioRecording": "錄音室",
+    "livePerformance": "現場演出",
+    "tunePopularity": "Popularity",
+    "externalLinks": "外部連結",
+    "openInPlatform": "在 {platform} 打開",
+    "@openInPlatform": {
+        "placeholders": {
+            "platform": {
+                "type": "String",
+                "example": "stats.fm"
+            }
+        }
+    },
+    "swipefyStats": "滑動統計",
+    "preview": "預覽",
+    "noPreviewAvailable": "此曲目尚無預覽",
+    "yourSwipes": "你的滑動",
+    "topLikedItems": "最喜歡的{type, select, tracks{曲目} albums{專輯} other{{type}}}",
+    "@topLikedItems": {
+        "placeholders": {
+            "type": {
+                "type": "String",
+                "example": "tracks"
+            }
+        }
+    },
+    "noTypeArtist": "此藝人無{type, select, swipes{滑動} tracks{最喜歡的曲目} albums{最喜歡的專輯} other{{type}}}",
+    "@noTypeArtist": {
+        "placeholders": {
+            "type": {
+                "type": "String",
+                "example": "swipes"
+            }
+        }
+    },
+    "discoverFromItem": "從{item} 發現",
+    "@discoverFromItem": {
+        "placeholders": {
+            "item": {
+                "type": "String",
+                "example": "Dua Lipa"
+            }
+        }
+    },
+    "discoverOnlyFromItem": "僅來自{item} 的曲目",
+    "@discoverOnlyFromItem": {
+        "placeholders": {
+            "item": {
+                "type": "String",
+                "example": "Dua Lipa"
+            }
+        }
+    },
+    "discoverSimilarToItem": "來自與 {item} 類似的藝人曲目",
+    "@discoverSimilarToItem": {
+        "placeholders": {
+            "item": {
+                "type": "String",
+                "example": "Dua Lipa"
+            }
+        }
+    },
+    "selectStreamingService": "選擇您的串流服務",
+    "skip": "跳過",
+    "like": "喜歡",
+    "dislike": "不喜歡",
+    "import": "匯入",
+    "importLikesFromPlatform": "從 {platform} 匯入 {count,plural,other{{count} 個喜歡}}",
+    "@importLikesFromPlatform": {
+        "placeholders": {
+            "platform": {
+                "type": "String",
+                "example": "Spotify"
+            },
+            "count": {
+                "type": "int",
+                "format": "decimalPattern",
+                "example": "10"
+            }
+        }
+    },
+    "next": "下一步",
+    "done": "完成",
+    "welcomeTo": "歡迎使用",
+    "login": "登入",
+    "taste": "品味",
+    "comingSoon": "即將推出！",
+    "connectServiceToContinue": "您必須連接串流服務才能繼續。",
+    "discoverTutorial": "發現教程",
+    "discoverTutorialDesc": "View how to use the Discover tab.",
+    "discoverTutorialS1Title": "Getting started with Discover",
+    "discoverTutorialS1Body": "Follow this short tutorial to learn how to use the Discover page.",
+    "discoverTutorialS2Title": "Swipe right and left",
+    "discoverTutorialS2Body": "Swipe to the left to dislike a track, swipe right to like it.",
+    "@discoverTutorialS2Body": {
+        "description": "For languages using right-to-left scripts, the liking and disliking gestures are reversed. Swipe left to like, and swipe right to dislike."
+    },
+    "discoverTutorialS3Title": "Skipping a track",
+    "discoverTutorialS3Body": "Swiping down or tapping the skip button on the social page will put the track in the skipped collection for later.",
+    "discoverTutorialS4Title": "Action buttons",
+    "discoverTutorialS4Body": "These buttons work just like the swipe gestures — just without the swiping part.",
+    "readySetSwipe": "準備、設定、滑動！",
+    "proTip": "專業小技巧",
+    "discoverTutorialS5Body": "It may take a few swipes before the algorithm knows what you like. Don't give up too soon ;‎)",
+    "letsGoButton": "開始吧！",
+    "collectionButton": "收藏清單",
+    "collectionButtonDesc": "最多選擇 {count,plural,other{{count} 個收藏}}，以便將您喜歡的滑動自動添加到其中。",
+    "@collectionButtonDesc": {
+        "placeholders": {
+            "count": {
+                "type": "int",
+                "example": "5"
+            }
+        }
+    },
+    "likeButton": "喜歡",
+    "dislikeButton": "不喜歡",
+    "skipButton": "跳過",
+    "skipButtonDesc": "Skip the currently playing track and decide later.",
+    "tuneButton": "曲調",
+    "tuneButtonDesc": "Adjust your Discover recommendation settings.",
+    "swipeStats": "滑動統計",
+    "swipeActivity": "滑動紀錄",
+    "noPublicCollections": "沒有公開收藏清單",
+    "private": "私人",
+    "public": "公開",
+    "all": "全部",
+    "noResults": "查無結果",
+    "findSwipefyUsers": "在 Swipefy 上尋找其他用戶",
+    "amoledDarkMode": "AMOLED 暗模式",
+    "restartDarkMode": "請重啟應用",
+    "restartDarkModeBody": "您必須重新啟動應用程序才能啟用暗模式更改。",
+    "appWide": "App-wide",
+    "appContentAlignMoreView": "將“查看更多”按鈕對齊到右側",
+    "twentyFourHourFormat": "Use 24-hour time format",
+    "hapticFeedback": "震動回饋",
+    "artistsCurrentTop": "Most liked by this artist",
+    "download": "下載",
+    "statsfmBannerTagline": "通過對您的音樂品味的獨特見解進入音樂的新維度。",
+    "endOfSyncedSwipes": "結束同步滑動",
+    "playlists": "播放列表",
+    "maxSyncPlatform": "You've reached the {platform} playlist limit.",
+    "@maxSyncPlatform": {
+        "placeholders": {
+            "platform": {
+                "type": "String",
+                "example": "Spotify"
+            }
+        }
+    },
+    "upgradeToSyncMore": "升級以將更多滑動同步到播放清單！",
+    "pickCollection": "挑選收藏清單",
+    "saveSwipesToQuestion": "Automatically save future likes to a collection",
+    "saveSwipeToCollection": "Save this track to one or more collections",
+    "onlySelectUpToCollections": "您最多只能選擇 {count,plural,other{{count} 個收藏}}。",
+    "@onlySelectUpToCollections": {
+        "placeholders": {
+            "count": {
+                "type": "int",
+                "example": "5"
+            }
+        }
+    },
+    "noCollection": "暫無收藏",
+    "noLikeAutoAdd": "Your future likes won't be automatically saved to a collection.",
+    "noLikeAndAddToCollections": "This track won't be liked and saved to a collection.",
+    "removeSwipeFromCollections": "Remove this swipe from any collections it was in previously.",
+    "about": "關於",
+    "choose": "選擇",
+    "or": "或",
+    "importPlaylistWarning": "All tracks in an imported collection will be marked as liked, but will not be included in your swipe stats.",
+    "importPlaylistDesc": "將創建一個包含所有播放列表曲目的收藏。",
+    "proRequiredPlaylistImport": "將播放列表匯入需要高級版",
+    "importLikesWarning": "Imported likes aren't included in your swipe stats",
+    "notOn": "未開啟",
+    "@notOn": {
+        "description": "Used for the not on Swipefy badge"
+    },
+    "statsfmUserNoSwipefy": "該 stats.fm 用戶不使用 Swipefy",
+    "upgradeToAccess": "Upgrade to get access to this feature",
+    "excludeStreamedTracks": "排除以前播放的曲目",
+    "importRequired": "需要導入",
+    "importRequiredDesc": "要使用此功能，您必須匯入串流歷史記錄並在 stats.fm 上使用串流同步\n\n（匯入和串流同步需要 stats.fm Plus，它與 Swipefy Pro 是分開的）。",
+    "moreInfo": "更多資訊",
+    "getPro": "取得高級版",
+    "cantPurchaseBeta": "您無法在測試版中購買高級版",
+    "removeFromCollectionsWarning": "This track will be removed from all your collections, since collections may only contain liked tracks.",
+    "autoplay": "自動播放",
+    "autoplaySocialScroll": "滾動社交選項卡後",
+    "autoplayTapSwipeButton": "點擊滑動按鈕後",
+    "autoplayChangeTuneOptions": "更改探索曲調選項後",
+    "invalidUrl": "無效網址：{url}",
+    "@invalidUrl": {
+        "placeholders": {
+            "url": {
+                "type": "String",
+                "example": "https://swipefy.app/pro"
+            }
+        }
+    },
+    "copy": "複製",
+    "link": "連結",
+    "copied": "已複製到剪貼簿",
+    "importPlaylist": "匯入播放清單",
+    "importPlaylistCopyDesc": "Adds the tracks currently in the playlist to a new collection",
+    "importPlaylistLinkDesc": "Synchronises the playlist with a new collection, in both directions",
+    "collectionUnlinkSyncPlaylist": "This disconnects the collection from the {platform} playlist. When re-enabling sync for this collection later, a new playlist will be created on {platform}.",
+    "@collectionUnlinkSyncPlaylist": {
+        "placeholders": {
+            "platform": {
+                "type": "String",
+                "example": "Spotify"
+            }
+        }
+    },
+    "swipeRemoved": "刪除滑動",
+    "addOnlyLikesCollectionWarning": "Collections may only contain liked tracks",
+    "importPlaylistLinkWarningDesc": "僅當您擁有播放清單時才可用",
+    "importPlaylistLinkWarning": "Changes will be made to your playlist if you choose to synchronise it. You may want to copy this playlist to a new collection instead.",
+    "yourTopArtists": "您最喜愛的藝人",
+    "yourTopArtistsDesc": "根據您的 stats.fm 最喜愛藝人的探索和滑動",
+    "viewAllTopArtists": "查看您所有最愛的藝人",
+    "splashSubtitle": "喜歡，滑動，享受！",
+    "customExcludedKeywords": "Exclude tracks with these keywords:",
+    "customExcludedKeywordsExample": "範例：stripped,sped up,slow",
+    "noPlaylistsFound": "無法找到播放清單",
+    "contactUs": "聯絡我們",
+    "troubleLoggingIn": "登入時遇到困難？",
+    "syncWithPlatform": "與 {platform} 同步",
+    "@syncWithPlatform": {
+        "placeholders": {
+            "platform": {
+                "type": "String",
+                "example": "Spotify"
+            }
+        }
+    },
+    "syncLikesWithPlatformDesc": "讓您在 Swipefy 和 {platform} 上的喜歡保持同步，以充分利用您的發現。",
+    "@syncLikesWithPlatformDesc": {
+        "placeholders": {
+            "platform": {
+                "type": "String",
+                "example": "Spotify"
+            }
+        }
+    },
+    "betaCaps": "BETA",
+    "plusPromoTitle": "所有 stats.fm Plus 用戶可享受 50% 折扣",
+    "plusPromoSubtitle": "This first month ({month}) only you'll have this exclusive bargain opportunity: don't miss out ;‎)",
+    "@plusPromoSubtitle": {
+        "placeholders": {
+            "month": {
+                "type": "String",
+                "example": "July"
+            }
+        }
+    },
+    "importPlatformPlaylists": "匯入 {platform} 播放清單",
+    "@importPlatformPlaylists": {
+        "placeholders": {
+            "platform": {
+                "type": "String",
+                "example": "Spotify"
+            }
+        }
+    },
+    "importPlatformPlaylistsDesc": "Import your great {platform} playlists and make them greater by swiping",
+    "@importPlatformPlaylistsDesc": {
+        "placeholders": {
+            "platform": {
+                "type": "String",
+                "example": "Spotify"
+            }
+        }
+    },
+    "announcement": "公告",
+    "proThankyouTitle": "Thanks ❤️",
+    "proThankyouBody": "We really appreciate your support! It's because of people like you that we're able to continue working on new features and new apps like this. Enjoy the full experience and if you're missing any features don't hesitate to mail us at support@swipefy.app :‎)",
+    "unableToLoad": "無法載入",
+    "tryAgainLater": "稍後再試",
+    "youSkippedATrack": "You skipped a track!",
+    "reset": "重置",
+    "swipingSinceDate": "Swiping since {date}",
+    "@swipingSinceDate": {
+        "placeholders": {
+            "date": {
+                "type": "String",
+                "example": "July 1st, 2023"
+            }
+        }
+    },
+    "appIcons": "App icons",
+    "importFromUrl": "Import from url",
+    "spotifyPlaylistUrl": "Spotify playlist url",
+    "invalidSpotifyPlaylistUrl": "Not a valid Spotify Playlist url",
+    "artworkBasedBackground": "Artwork-based background",
+    "audioOnly": "Audio only",
+    "audioOnlyDesc": "Enhance your focus on the music by hiding cover art, titles, and artists.",
+    "experimentalFeature": "Experimental feature",
+    "experimentalFeatureDesc": "Using this feature could bring unwanted consequences: it might be incomplete or broken.",
+    "layout": "Layout",
+    "stackLayout": "Stack",
+    "verticalLayout": "Vertical",
+    "exploreGenresDesc": "Explore tracks from specific genres",
+    "genresMaxFavorites": "You can only have up to five favorites",
+    "settingsDatabaseStats": "資料庫統計",
+    "proUsers": "Pro users",
+    "diffPastHour": "+ 過去一小時 {diff} 的變化",
+    "@diffPastHour": {
+        "placeholders": {
+            "diff": {
+                "type": "int",
+                "format": "decimalPattern",
+                "example": "26,392"
+            }
+        }
+    },
+    "liveCaps": "實況更新",
+    "friendsSwipes": "Friends who swiped",
+    "friendsSwipesEmpty": "None of your friends have swiped this track",
+    "accountBanned": "Account banned",
+    "accountBannedDesc": "The account you are viewing has been banned from the platform.",
+    "favorites": "Favorites",
+    "noFavorites": "No favorites",
+    "noFavoritesDesc": "Favorite a genre for it to appear here",
+    "billing": "Billing",
+    "settingsBillingDesc": "View current subscription information.",
+    "billingManageWarning": "You cannot manage subscriptions inside the app.",
+    "billingNoProDesc": "Looks like you don't have Swipefy Pro yet",
+    "noPurchaseExpire": "This purchase will never expire",
+    "subRenewsOn": "Renews on {date}",
+    "@subRenewsOn": {
+        "placeholders": {
+            "date": {
+                "type": "String",
+                "example": "September 1, 2024"
+            }
+        }
+    },
+    "subExpiredOn": "Expired on {date}",
+    "@subExpiredOn": {
+        "placeholders": {
+            "date": {
+                "type": "String",
+                "example": "September 1, 2024"
+            }
+        }
+    },
+    "subExpiresOn": "Expires on {date}",
+    "@subExpiresOn": {
+        "placeholders": {
+            "date": {
+                "type": "String",
+                "example": "September 1, 2024"
+            }
+        }
+    },
+    "subYearly": "yearly",
+    "subMonthly": "monthly",
+    "helpCenter": "Help center",
+    "settingsHelpCenterDesc": "Find tutorials or contact support.",
+    "helpCenterLeaveEmail": "Leave us an email if you have more questions: support@swipefy.app",
+    "joinBeta": "加入 Beta 測試計劃",
+    "tryAgain": "重新嘗試",
+    "errorOnAppLaunch": "An error occurred when launching the app.",
+    "cantConnectApi": "Swipefy couldn't connect to its servers, please try again in a few moments",
+    "pleaseWait": "請稍等",
+    "systemLanguage": "System language"
 }
-}
-},
-"otherUsersStatsDesc": "這些並非您的統計資料",
-"compare": "比較",
-"compareDesc": "您可以將自己的統計資料與 stats.fm 上其他使用者的統計資料進行比較。\n\n如果其中任何一方未持有 stats.fm Plus 或尚未導入您的/他們的串流資料，部分統計資料可能不會顯示。其他使用者也可能在其隱私設置中隱藏所需的資訊。",
-"commonDesc": "系統是針對兩位使用者排行榜中的前 250 名 {type} 進行比對，而非對應到整體的播放記錄。{title}",
-"@commonDesc": {
-"placeholders": {
-"type": {
-"type": "String",
-"example": "tracks"
-},
-"title": {
-"type": "String",
-"example": "sjoerd"
-}
-}
-},
-"commonTracks": "共同曲目",
-"commonArtists": "共同歌手",
-"commonGenres": "共同音樂類型",
-"firstStreams": "初次串流",
-"latestStreams": "最新串流",
-"compareWeekdays": "週日",
-"compareWeekdaysDesc": "不同週日的統計資料",
-"compareMonths": "月份",
-"compareMonthsDesc": "不同月份的統計資料",
-"compareYears": "年份",
-"compareYearsDesc": "不同年份的統計資料",
-"compareChatInvite": "已邀請您進行比較",
-"cantCompareSelf": "很抱歉，您無法與自己進行比較。",
-"noneInCommon": "在 {range} 的資料範圍中，找不到與 {username} 有關的任何共同 {type}。（從使用者的前 250 名 {type} 中）",
-"@noneInCommon": {
-"placeholders": {
-"type": {
-"type": "String",
-"example": "tracks"
-},
-"username": {
-"type": "String",
-"example": "sjoerd"
-},
-"range": {
-"type": "String",
-"example": "lifetime"
-}
-}
-},
-"commonPrivacyPrivate": "找不到與 {username} 有關的任何共同 {type, select, tracks{曲目} artists{歌手} genres{音樂類型} other{項目}}；對方已將最高人氣 {type, select, tracks{曲目} artists{歌手} genres{音樂類型} other{項目}} 設為不公開。",
-"@commonPrivacyPrivate": {
-"placeholders": {
-"type": {
-"type": "String",
-"example": "tracks"
-},
-"username": {
-"type": "String",
-"example": "sjoerd"
-}
-}
-},
-"comparePrivacyPrivate": "無法載入所需的資訊，{username} 已將所需的資訊設為不公開。",
-"@comparePrivacyPrivate": {
-"placeholders": {
-"username": {
-"type": "String",
-"example": "sjoerd"
-}
-}
-},
-"streamedByOn": "{datetime} 由 {username} 播放",
-"@streamedByOn": {
-"placeholders": {
-"username": {
-"type": "String",
-"example": "sjoerd"
-},
-"datetime": {
-"type": "String",
-"example": "4/20/00 4:20"
-}
-}
-},
-"inCommonWith": "與 {username} 有 {count} 項 {count, plural, one{{type, select, track{曲目} artist{歌手} genre{音樂類型} other{項目}}} other{{type, select, track{曲目} artist{歌手} genre{音樂類型} other{項目}}}} 相同",
-"@inCommonWith": {
-"placeholders": {
-"count": {
-"type": "int",
-"example": "5"
-},
-"type": {
-"type": "String",
-"example": "track"
-}
-}
-},
-"compareTwoUsers": "比較 {displayName1} 與 {displayName2}",
-"@compareTwoUsers": {
-"placeholders": {
-"displayName1": {
-"type": "String",
-"example": "Sjoerd"
-},
-"displayName2": {
-"type": "String",
-"example": "Deuss"
-}
-}
-},
-"compareTwoUsersDesc": "分享比較連結可對兩位使用者進行比較。",
-"compareWithYou": "與您比較",
-"compareWithYouDesc": "分享比較連結，供他人與您進行比較。",
-"fullStatsAccess": "完整統計資料存取",
-"fullStatsAccessDesc": "啟用「完整統計資料存取」將授予您使用「同步串流」設定已經與 stats.fm 同步的所有統計資料的完整存取權。如果您想要從啟用 stats.fm 上「同步串流」之前的紀錄開始取得所有資料，仍需要從 {platform} 中導入資料。一旦您的資料上傳完成，stats.fm 將過濾任何重複內容。",
-"@fullStatsAccessDesc": {
-"placeholders": {
-"platform": {
-"type": "String",
-"example": "Spotify"
-}
-}
-},
-"fullStatsAccessEnable": "這項設定將使 App 僅顯示 stats.fm 使用「同步串流」設定所收集的資料（如果您尚未啟用，也將啟用「同步串流」功能）。您將無法檢視您完整的 {platform} 歷史記錄；如果您想取得終生的統計資料，您仍然必須導入相關資料。",
-"@fullStatsAccessEnable": {
-"placeholders": {
-"platform": {
-"type": "String",
-"example": "Spotify"
-}
-}
-},
-"fullStatsAccessDisabled": "這會使得 App 的運作方式就如同您還未導入資料（您的資料不會被刪除，只是目前處於隱藏狀態）；如果您想再次存取完整資料，可以重新啟用這項設定。",
-"unableToLoad": "無法載入",
-"tryAgainLater": "請稍後再試",
-"releaseDate": "發行日期",
-"customIcons": "自訂圖示",
-"customIconsRestart": "App 將會重新啟動",
-"customIconsRestartDesc": "App 將關閉或重新啟動，並套用您選擇的新 App 圖示！",
-"customIconsColoured": "彩色圖示：",
-"customIconsSpecial": "特殊圖示：",
-"privateUserTopListener": "無法查看使用者。他們將自己排行榜的隱私設定為不公開。",
-"announcement": "通知",
-"cancel": "取消",
-"ok": "好",
-"chatListEmpty": "與某人開啟對話，以將對話顯示在此處。",
-"shareChatEmpty": "與某人開啟對話，以將對話顯示在此處。",
-"link": "連結",
-"privateUserDesc": "該使用者選擇將自身的個人檔案設為不公開。",
-"report": "檢舉",
-"chat": "聊天",
-"chatPlural": "聊天紀錄",
-"appContent": "App 內容",
-"appWide": "適用於整個應用程式",
-"showPlaylistsHome": "在頁首上顯示播放列表",
-"appContentAlignMoreView": "將「檢視更多」按鈕對齊至右側",
-"defaultTabTitle": "選擇應用程式預設開啟的分頁",
-"showFriendsLeaderboard": "顯示好友排行榜",
-"hapticFeedback": "觸感回饋",
- "reset": "重設",
- "showMinutesTimesStreamed": "顯示收聽分鐘數和/或次數",
- "showMinutesStreamedSetting": "顯示收聽分鐘數",
- "showTimesStreamedSetting": "顯示收聽次數",
- "swapMinutesTimesSetting": "切換收聽分鐘數和次數順序",
- "areYouSure": "你確定嗎？",
- "connections": "連接的帳號",
- "removedConnection": "已移除連接的帳號！",
- "streamingServices": "音樂串流服務",
- "connectionsDesc": "管理你的音樂串流服務和社群網站的連接帳號",
- "connectionsPrivacyDesc": "選擇是否要在個人頁面上顯示連結到你的音樂串流服務和其他社群網站的連結",
- "messagePrivacy": "訊息隱私",
- "messagePrivacyDesc": "允許所有人傳送訊息給你，或是只允許朋友傳訊息",
- "friendsPrivacyDesc": "選擇是否要在個人頁面上顯示你的好友列表",
- "leaderboards": "排行榜",
- "leaderboardsDesc": "在全球排行榜上顯示你的個人統計數據 (例如你是否是特定歌手的最高收聽者之一)",
- "success": "成功",
- "plusImportRequired": "需要訂閱 stats.fm Plus 並匯入資料",
- "plusImportRequiredOtherDesc": "對方也需要訂閱 stats.fm Plus 並匯入完整的收聽數據才能使此功能生效。",
- "statsfmPlusRequired": "需要訂閱 stats.fm Plus",
- "statsfmPlusRequiredImport": "若要匯入 Spotify 收聽紀錄，則需訂閱 stats.fm Plus。",
- "discordConnectionDesc": "連結你的 Discord 帳號，便可使用 stats.fm Discord 機器人獲取個人化的指令，同時在你的 stats.fm 個人頁面上顯示你的 Discord 個人資料。",
- "connectionConnect": "連結",
- "connectionDisconnect": "斷開連結",
- "connectionNotConnected": "尚未連結",
- "connectionRefresh": "重新整理",
- "connectedAs": "已連結帳號：{username}",
- "@connectedAs": {
-  "placeholders": {
-   "username": {
-    "type": "String",
-    "example": "sjoerd"
-   }
-  }
- }, 
- "accountConnected": "帳號已連結",
- "accountNotConnected": "尚未連結",
- "syncStreams": "同步收聽次數",
- "loading": "載入中...",
- "comingSoon": "即將推出！",
- "viewAccount": "檢視帳號",
- "appleMusicComingSoon": "我們正在努力完善對 Apple Music 的支援！",
- "spotifyConnectionTempDesc": "目前必須擁有 Spotify 帳號才能使用 stats.fm，但這很快就會改變了！",
- "timezone": "時區",
- "differentTimezone": "偵測到不同的時區！",
- "differentTimezoneDesc": "您的時區似乎與帳號中設定的時區不同，您要更新它嗎？",
- "beforeItem": "更新前： {item}",
- "@beforeItem": {
-  "placeholders": {
-   "item": {
-    "type": "String",
-    "example": "timezone"
-   }
-  }
- },
- "afterItem": "更新後： {item}",
- "@afterItem": {
-  "placeholders": {
-   "item": {
-    "type": "String",
-    "example": "timezone"
-   }
-  }
- },
- "twentyFourHourFormat": "使用 24 小時制",
- "autoAskTimezoneSetting": "偵測你是否使用了新的時區",
- "switchMode": "切換",
- "dontAskAgain": "不再詢問",
- "hiddenForOthers": "這個區塊目前只有你看到。",
- "successfullyRemoved": "已順利刪除！",
- "purchased": "已購買",
- "plusPurchasedDesc": "你已經擁有 Plus，可以享有所有 stats.fm Plus 用戶的額外附加功能！",
- "blockedFromMessaging": "無法傳送訊息",
- "blockedYouDesc": "{displayName} 已經封鎖你傳送訊息",
- "@blockedYouDesc": {
-  "placeholders": {
-   "displayName": {
-    "type": "String",
-    "example": "sjoerd"
-   }
-  }
- },
- "blockedYouPopup": "無法傳送此訊息。{displayName} 已將你封鎖。",
- "@blockedYouPopup": {
-  "placeholders": {
-   "displayName": {
-    "type": "String",
-    "example": "sjoerd"
-   }
-  }
- },
- "blockedPopup": "您必須先解除對 {displayName} 的封鎖才可以傳送訊息。",
- "@blockedPopup": {
-  "placeholders": {
-   "displayName": {
-    "type": "String",
-    "example": "sjoerd"
-   }
-  }
- },
- "blockedUser": "已封鎖 {displayName}",
- "@blockedUser": {
-  "placeholders": {
-   "displayName": {
-    "type": "String",
-    "example": "sjoerd"
-   }
-  }
- },
- "unblockedUser": "已解除封鎖 {displayName}",
- "@unblockedUser": {
-  "placeholders": {
-   "displayName": {
-    "type": "String",
-    "example": "sjoerd"
-   }
-  }
- },
- "profileLink": "個人頁面連結",
- "plusToShare": "訂閱 Plus 以分享",
- "plusImportToShare": "訂閱 Plus 並匯入資料以分享",
- "importToShare": "請先匯入資料再分享",
- "currentlyUnavailable": "目前無法使用",
- "storefrontUnavailable": "無法連線到店面，請嘗試重新啟動你的裝置。",
- "unavailableInBeta": "此 Beta 版本不支援",
- "albumLength": "專輯長度",
- "noResults": "找不到符合的結果",
- "deleteMessage": "刪除訊息",
- "deleteMessageQuestion": "您確定要刪除此訊息嗎？",
- "messageRemoved": "訊息已刪除",
- "blockUser": "封鎖",
- "unblockUser": "解除封鎖",
- "options": "選項",
- "imageUpload": "上傳",
- "profileImageUploadDesc": "上傳新的個人頭像",
- "removeImage": "移除圖片",
- "profileImageRemoveDesc": "從你的帳號移除個人頭像",
- "profileImageRemoved": "已移除個人頭像",
- "aboutMachineLearning": "關於 Spotify 的演算法",
- "aboutMachineLearningDesc": "Spotify 的演算法透過「機器學習」決定排行位置。\n\n「播放時間」和「收聽次數」是更為簡單、且準確的計算方式。這些選項需要匯入你完整的收聽紀錄。選擇其中一項也會在列表中展示每個項目的收聽次數。\n\n「機器學習」只顯示 Spotify 提供的資料，所以不會混雜來自其他服務的資料，而且也不會顯示收聽次數。",
- "likesCount": "{number} 個{count, plural, one{讚} other{讚}}",
- "@likesCount": {
-  "placeholders": {
-   "number": {
-    "type": "String",
-    "example": "50"
-   },
-   "count": {
-    "type": "int",
-    "example": "50"
-   }
-  }
- },
- "friendsCount": "{number} 位{count, plural, one{好友} other{好友}}",
- "@friendsCount": {
-  "placeholders": {
-   "number": {
-    "type": "String",
-    "example": "50"
-   },
-   "count": {
-    "type": "int",
-    "example": "50"
-   }
-  }
- },
- "recordsCount": "{number} 張{count, plural, one{唱片} other{唱片}}",
- "@recordsCount": {
-  "placeholders": {
-   "number": {
-    "type": "String",
-    "example": "50"
-   },
-   "count": {
-    "type": "int",
-    "example": "50"
-   }
-  }
- },
- "greetingGoodMorning": "早安",
- "greetingGoodAfternoon": "午安",
- "greetingGoodEvening": "晚安",
- "statsfmCharts": "stats.fm 排行榜",
- "swipefyCharts": "Swipefy 排行榜",
- "trendingOnPlatform": "今日 {platform} 流行趨勢",
- "@trendingOnPlatform": {
-  "placeholders": {
-   "platform": {
-    "type": "String",
-    "example": "statsfm"
-   }
-  }
- },
- "tapEnterSearch": "輕觸 Enter 搜尋",
- "artistMates": "{artist}-mates",
- "@artistMates": {
-  "placeholders": {
-   "artist": {
-    "type": "String",
-    "example": "Tate McRae"
-   }
-  }
- },
- "aboutArtistMates": "依據喜愛 {artist} 的人來過濾您的知音夥伴",
- "@aboutArtistMates": {
-  "placeholders": {
-   "artist": {
-    "type": "String",
-    "example": "Tate McRae"
-   }
-  }
- },
- "left": "左",
- "right": "右",
- "requiredInfoStillLoading": "所需資訊正在載入中，請稍後。",
- "earlyAccess": "搶先體驗",
- "defaultStatsInfoDesc": "開啟曲目、專輯或歌手頁面時，顯示統計資料頁籤為預設頁籤。",
- "makeDefault": "設為預設值",
- "infoDefaultStatsTab": "立即查看統計資料",
- "infoPagesTitle": "項目頁面",
- "failedToAuthorizeSpotify": "過程中 Spotify 似乎驗證時出現了問題，請稍後再試。",
- "selectDataFile": "選擇資料檔案",
- "importOneZipError": "一次只能選擇一個 zip 檔案。",
- "importZipJsonFileError": "您不能同時選擇一個 zip 檔案和一個 JSON 檔案。",
- "importNoValidStreamsZip": "在所選的 zip 檔裡尚未找到有效串流，請確定您上傳的是您從 Spotify 收到的「延伸串流紀錄資料(Extended streaming history data)」的 zip 檔案。",
- "importNoValidStreamsJSON": "所選的 {count, plural, one{JSON 檔案} other{JSON 檔案}} 都未找到有效串流。請確定您上傳的是來自您從 Spotify 收到的「延伸串流紀錄資料(Extended streaming history data)」zip 檔案中的 {fileName} JSON 檔。",
- "@importNoValidStreamsJSON": {
-  "placeholders": {
-   "count": {
-    "type": "int",
-    "example": "5"
-   },
-   "fileName": {
-    "type": "String",
-    "example": "Streaming_History_Audio_x"
-   }
-  }
- },
- "incorrectDataPackage": "不正確的資料包",
- "importAccountDataWarningZip": "您似乎在上傳「帳戶資料(Account data)」zip 檔案，此檔案與「延伸串流紀錄資料(Extended streaming history data)」zip 檔案有所不同。點擊「查看詳情」來獲取協助。",
- "importAccountDataWarningJSON": "您似乎在上傳來自「帳戶資料(Account data)」的 .json 檔案，此檔案與「延伸串流紀錄資料(Extended streaming history data)」包有所不同。點擊「查看詳情」來獲取協助。",
- "failedToImport": "未能匯入",
- "all": "全部",
- "externalLinks": "外部連結",
- "openInPlatform": "於 {platform} 開啟",
- "@openInPlatform": {
-  "placeholders": {
-   "platform": {
-    "type": "String",
-    "example": "stats.fm"
-   }
-  }
- },
- "accountBanned": "帳戶已被封鎖",
- "accountBannedDesc": "正在瀏覽的帳戶已被本站封鎖。",
- "accountStreamsQuarantined": "此帳戶的收聽紀錄已被隔離。",
- "quarantinedUsers": "已隔離用戶",
- "accountExcludedFromLeaderboards": "此用戶因使用操縱手法已被排除於所有排行榜。",
- "info": "資訊",
- "inbox": "好友請求",
- "incoming": "待處理",
- "outgoing": "已發送",
- "artistsCurrentTop": "即時歌手排行榜",
- "@artistsCurrentTop": {
-  "description": "顯示為歌手排行榜中即時排行榜的副標題"
- },
- "importData": "匯入資料",
- "moreStatsPromoImport": "匯入資料後即可使用各種酷炫的統計資料。",
- "moreStatsPromoPlusImport": "訂閱 stats.fm Plus 並匯入資料後即可使用各種酷炫的統計資料。",
- "earlyUser": "早期使用者",
- "@earlyUser": {
-  "description": "表示用戶是在我們開始記錄加入日期前就已加入我們的服務，字詞盡量維持簡短。"
- },
- "unknownJoinDate": "未知的加入日期",
- "unknownJoinDateDesc": "此使用者是在開始記錄加入日期前就已加入 stats.fm 的（我們已於 2022 年 9 月 3 日後才開始記錄此資料）。",
- "joinedOnDate": "用戶於 {date} 加入",
- "@joinedOnDate": {
-  "placeholders": {
-   "date": {
-    "type": "String",
-    "example": "11/11/11"
-   }
-  }
- },
- "add": "加入",
- "skip": "略過",
- "accept": "接受",
- "statsTabLabel": "統計資料頁籤",
- "directDifference": "直接差距",
- "directDifferenceDesc": "此設定可分別改變統計資料中月份或年份的日期比較範圍，同時也會影響比較時出現的差異百分比。\n\n開啟「直接差距」時，比較範圍會設定為目前選定範圍的一個月前或一年之前的確切範圍（取決於選擇的顯示區間）。\n\n將「直接差距」關閉時，比較範圍會設定為目前選定範圍的正前方。",
- "inviteDiscordBot": "邀請 Discord 機器人",
- "inviteDiscordBotDesc": "我們也有提供可在 Discord 群組使用的 Discord 機器人讓您方便瀏覽自己的統計資料！",
- "dataProvidedBy": "資料由 {platform} 提供",
- "@dataProvidedBy": {
-  "placeholders": {
-   "platform": {
-    "type": "String",
-    "example": "Spotify"
-   }
-  }
- },
- "custom": "自訂",
- "customRange": "自訂時間區間 ({date1}—${date2})",
- "@customRange": {
-  "placeholders": {
-   "date1": {
-    "type": "String",
-    "example": "10/2"
-   },
-   "date2": {
-    "type": "String",
-    "example": "10/16"
-   }
-  }
- },
- "compareOrderCountOrTime": "您必須更改排序方式為「播放時間」或「收聽次數」。",
- "compareBothUsersImportRequired": "雙方使用者都要先匯入資料才能使用這項功能。",
- "social": "社群媒體",
- "billing": "訂閱管理",
- "billingManageWarning": "您無法在 App 內管理訂閱。",
- "billingNoPlusDesc": "看起來您尚未擁訂閱 stats.fm Plus。",
- "noPurchaseExpire": "此購置項目絕不過期。",
- "subRenewsOn": "此訂閱將於 {date} 自動續約",
- "@subRenewsOn": {
-  "placeholders": {
-   "date": {
-    "type": "String",
-        "example": "September 1, 2024"
-   }
-  }
- },
- "subExpiredOn": "已於 {date} 到期",
- "@subExpiredOn": {
-  "placeholders": {
-   "date": {
-    "type": "String",
-        "example": "September 1, 2024"
-   }
-  }
- }, 
- "subExpiresOn": "到期日：{date}",
- "@subExpiresOn": {
-  "placeholders": {
-   "date": {
-    "type": "String",
-        "example": "September 1, 2024"
-   }
-  }
- },
- "subYearly": "年度訂閱",
- "daily": "每日",
- "cumulative": "累積",
- "settingsWidgetInstructions": "Widget 說明",
- "widgets": "Widgets",
- "importPlusSync": "匯入 + 同步",
- "importSyncWidgetDesc": "若要使用 widgets，請匯入您的資料並啟用收聽紀錄同步！",
- "widgetsUpdateWarning": "Widgets 會有些許延遲，因為它們只會每 15 到 60 分鐘更新一次。",
- "howToAddWidget": "如何將 Widget 介面添加到你的 {type, select, homescreen{主畫面} lockscreen{鎖定畫面} other{主畫面}}",
- "@howToAddWidget": {
-  "placeholders": {
-   "type": {
-    "type": "String",
-        "example": "homescreen"
-   }
-  }
- },
- "howToEditWidget": "如何編輯 {type, select, homescreen{主畫面} lockscreen{鎖定畫面} other{主畫面}} Widget",
- "@howToEditWidget": {
-  "placeholders": {
-   "type": {
-    "type": "String",
-        "example": "homescreen"
-   }
-  }
- },
- "widgetAddHomescreenStep1": "長按住你的主畫面上的一個空白區域",
- "widgetAddHomescreenStep2": "點擊左上角的「+」",
- "widgetAddHomescreenStep3": "找到並選擇「stats.fm」",
- "widgetLockscreenLongPress": "在您的鎖定畫面上長按一個空白區域",
- "widgetLockscreenCustomizeButton": "點擊「自訂」按鈕",
- "widgetLockscreenCustomizeOption": "選擇選項「鎖定畫面」",
- "widgetLockscreenWidgetArea": "點擊時鐘下方的小工具區域",
- "widgetAddLockscreenStep5": "找到並選擇「stats.fm」",
- "widgetAddLockscreenStep6": "然後點擊或拖動以添加小工具",
- "widgetEditHomescreenStep1": "長按 Widget",
- "widgetEditHomescreenStep2": "選擇選項 「編輯小工具」",
- "widgetAdjustSettingsStep": "然後根據您的喜好調整選項",
- "widgetEditLockscreenStep5": "點擊您想要編輯的 stats.fm widget",
- "limitedTime": "限時",
- "systemLanguage": "系統語言",
- "active72h": "此用戶在過去 72 小時內曾上線。",
- "noMoreMessages": "沒有其他訊息了 :(",
- "userWantsToBeFriends": "{displayName} 想和你成為朋友",
- "@userWantsToBeFriends": {
-  "placeholders": {
-   "displayName": {
-    "type": "String",
-    "example": "Sjoerd"
-   }
-  }
- },
- "recentlyActive": "最近上線",
- "youBothLove": "你們共同的喜愛",
- "friendsExclamation": "現在是好友了！",
- "youAndUserFriends": "你和 {displayName} 現在是好友了。",
- "@youAndUserFriends": {
-  "placeholders": {
-   "displayName": {
-    "type": "String",
-    "example": "Sjoerd"
-   }
-  }
- },
- "viewAll": "全部查看",
- "noSoulmateFriendsFound": "沒有找到志趣相投的好友",
- "soulmateFriends": "Soulmate Friends (知音好友)",
- "soulmateFriendsDesc": "來 stats.fm 發掘新朋友吧！他們都有跟你相似的音樂品味（與約會無關）。\n\n你可以透過更新隱私設定來隱藏個人資訊，以免陌生人看到你的知音好友資訊。",
- "pullUpMore": "上滑以載入更多資訊",
- "reachedTheEnd": "你已經到最底部了。",
- "noMoreSoulmateFriendsOptions": "找不到其他知音好友",
- "team": "團隊",
- "receiptFor": "{displayName} 的收據",
- "@receiptFor": {
-  "placeholders": {
-   "displayName": {
-    "type": "String",
-    "example": "Sjoerd"
-   }
-  }
- },
- "receiptRange": "範圍 {range}",
- "@receiptRange": {
-  "placeholders": {
-   "range": {
-    "type": "String",
-        "example": "6 months"
-   }
-  }
- },
- "receiptCardHolder": "持卡人：{username}",
- "@receiptCardHolder": {
-  "placeholders": {
-   "username": {
-    "type": "String",
-    "example": "sjoerd"
-   }
-  }
- },
- "receiptCardNumber": "卡號：{number}",
- "@receiptCardNumber": {
-  "placeholders": {
-   "number": {
-    "type": "String",
-    "example": "**** **** **** 2023"
-   }
-  }
- },
- "receiptTotal": "總金額：",
- "receiptItemCount": "項目筆數：",
- "receiptMin": "MIN",
- "@receiptMin": {
-  "description": "簡稱「分鐘數」"
- },
- "receiptAmt": "金額",
- "@receiptAmt": {
-  "description": "簡稱「金額」"
- },
- "receiptItem": "項目",
- "networkAndWifi": "行動網路 + Wi-Fi",
- "wifiOnly": "僅限 Wi-Fi 連線",
- "disable": "停用",
- "quizGuessNumberOneArtist": "猜猜誰是你的\n<primary>#1</primary> 歌手！",
- "@quizGuessNumberOneArtist": {
-  "description": "請勿翻譯 <primary> 和 </primary>"
- },
- "quizYouThinkItsArtist": "所以你覺得是...\n<primary>{artist}?</primary>",
- "@quizYouThinkItsArtist": {
-  "description": "請勿翻譯 <primary> 和 </primary>",
-  "placeholders": {
-   "artist": {
-    "type": "String",
-    "example": "Astrid S"
-   }
-  }
- },
- "quizYouThinkItsArtistCorrect": "你猜對了!\n就是 <primary>{artist}</primary>!",
- "@quizYouThinkItsArtistCorrect": {
-  "description": "請勿翻譯 <primary> 和 </primary>",
-  "placeholders": {
-   "artist": {
-    "type": "String",
-    "example": "Astrid S"
-   }
-  }
- },
- "quizYouThinkItsArtistNotCorrect": "很接近了！\n答案是 <primary>{artist}</primary>!",
- "@quizYouThinkItsArtistNotCorrect": {
-  "description": "請勿翻譯 <primary> 和 </primary>",
-  "placeholders": {
-   "artist": {
-    "type": "String",
-    "example": "Astrid S"
-   }
-  }
- },
- "numberOneArtist": "#1 歌手",
- "quizYourArtistTopTrack": "想一想，你覺得 <primary>{artist}</primary> 裡你最常聽的曲目子是哪一首？",
- "@quizYourArtistTopTrack": {
-  "description": "請勿翻譯 <primary> 和 </primary>",
-  "placeholders": {
-   "artist": {
-    "type": "String",
-    "example": "Astrid S"
-   }
-  }
- },
- "quizYourArtistTopTrackCorrect": "恭喜 你答對了！答案是 <primary>{track}</primary>！",
- "@quizYourArtistTopTrackCorrect": {
-  "description": "請勿翻譯 <primary> 和 </primary>",
-  "placeholders": {
-   "track": {
-    "type": "String",
-    "example": "Line of Sight"
-   }
-  }
- },
- "quizYourArtistTopTrackNotCorrect": "也是好歌，但不是你聽最多的喔！答案是 <primary>{track}</primary>!",
- "@quizYourArtistTopTrackNotCorrect": {
-  "description": "請勿翻譯 <primary> 和 </primary>",
-  "placeholders": {
-   "track": {
-    "type": "String",
-    "example": "Line of Sight"
-   }
-  }
- },
- "quizPromoText": "<primary>stats.fm</primary> 能將歌曲、歌手手或專輯的個人化統計圖表化！",
- "@quizPromoText": {
-  "description": "請勿翻譯 <primary> 和 </primary>"
- },
- "quizStartJourney": "立即開始！",
- "skipQuizDesc": "測驗不超過一分鐘，但你可以選擇跳過。",
- "settingsWhatsNew": "最新動態",
- "settingsChangelog": "更新日誌",
- "feedback": "意見反饋",
- "bugReports": "臭蟲回報",
- "topListenersNoStreams": "找不到有聆聽紀錄的用戶",
- "statsfmLabs": "stats.fm 實驗室",
- "settingsStatsfmLabsDesc": "搶先體驗我們目前在研發的一些項目吧！",
- "yourTrends": "您的趨勢",
- "yourTopShort": "您的的收藏",
- "preview": "預覽",
- "noPreviewAvailable": "這歌曲尚無預覽可播",
- "home": "主頁",
- "blockedUsers": "已封鎖用戶",
- "noBlockedUsers": "尚無已封鎖用戶",
- "appNavbarShowNames": "顯示頁籤名稱",
- "appNavbarProfileImageIcon": "將個人照作為我的的頁籤的標誌",
- "editBottomTabs": "編輯底部頁籤",
- "editTabs": "編輯頁籤",
- "extraOptions": "額外選項",
- "noMoreItems": "沒有更多項目了",
- "reorderResetDesc": "將列表設置回至預設順序和選項。",
- "customize": "自訂",
- "recentSearches": "最近搜尋",
- "noRecentSearches": "尚無搜尋記錄",
- "overviewSharePromoTitle": "分享您的的統計資料",
- "overviewSharePromoSubtitle": "獲取可輕鬆與好友分享的圖像！",
- "consentSettingsTitle": "廣告內容選項",
- "consentSettingsSubtitle": "關於歐洲經濟區及英國使用者廣告選項設置",
- "imageSaved": "已將圖片儲存到相簿",
- "saveImage": "儲存圖片",
- "requestData": "申請資料",
- "requestYourData": "請求您的的資料",
- "requestYourDataDesc": "查看如何從我們提供的的串流媒體服務請求資料，並查看資料預計抵達時間點。",
- "oneToThreeWeeks": "1-3週",
- "aboutSpotifyDataRequest": "這是一個簡易的一次性程序。匯入檔案後，如果您開啟了 Spotify 的收聽同步，您的資料將自動保全新。.",
- "dataArrivalForcast": "數據抵達預估",
- "dataArrivalForcastDesc": "這項估算是依據數據請求日與過去用戶匯入趨勢估算出的數據可能抵達的日期。",
- "ifRequestedBefore": "若是{date}之前申請",
- "@ifRequestedBefore": {
-  "placeholders": {
-   "date": {
-    "type": "DateTime",
-    "format": "MMMMd",
-        "example": "June 15th"
-   }
-  }
- },
- "ifRequestedAfter": "若是{date}之後申請",
- "@ifRequestedAfter": {
-  "placeholders": {
-   "date": {
-    "type": "DateTime",
-    "format": "MMMMd",
-        "example": "June 15th"
-   }
-  }
- },
- "ifRequestedNow": "若是現在申請",
- "estimatedDays": "約在 {count} {count, plural, zero{天} one{天} other{天}}左右後",
- "@estimatedDays": {
-  "placeholders": {
-   "count": {
-    "type": "int",
-    "example": "15"
-   }
-  }
- },
- "learnHow": "教學",
- "anyDay": "隨時",
- "@anyDay": {
-  "description": "代表資料隨時可能會到的狀態。"
- },
- "style": "樣式",
- "styleDesc": "選擇背景顏色和其他設置.",
- "noAdPlusTitle": "購買 Plus 以移除廣告",
- "noAdPlusSubtitle": "找不到合適的廣告 :‎(",
- "getButton": "獲得",
- "@getButton": {
-  "description": "用在獲得 Plus 的橫標誌上的按鈕"
- },
- "privacyPolicy": "隱私政策",
- "termsOfService": "服務條款",
- "videoQuality": "影片質量",
- "videoQualityDesc": "有些影片不見得支援所有的解析度，若所選的質量無提供的話，則會預設至其他可提供的較低解析度。",
- "wifi": "Wi-Fi",
- "cellular": "行動數據",
- "like": "喜愛",
- "@like": {
-  "description": "你喜歡一首歌曲時"
- },
- "dislike": "不喜愛",
- "@dislike": {
-  "description": "你不喜歡一首歌曲時"
- },
- "appleMusicSort": "Apple Music 演算法",
- "appleMusicSortDesc": "僅依年為分佈排序",
- "chooseStreamingService": "請選擇串流服務並繼續",
- "appleMusicStatusDisabled": "未訂閱 Apple Music 或帳戶尚無聆聽紀錄。",
- "appleMusicStatusReconnect": "未與 Apple Music 連結或連結已過期。",
- "manualActionRequired": "需要手動操作",
- "appleMusicMusicKitDeniedDesc": "想要更新您的連結，請從設定點開 stats.fm。確保選項裡，\"媒體與 Apple Music\" 是允許狀態，然後回到 App 後重新嘗試。",
- "appleMusicNoActiveSubscription": "您需要有效的 Apple Music 訂閱才可登入（這是 Apple 的需求）",
- "advanced": "進階",
- "connectedToAccount": "與 {email} 已連接",
- "@connectedToAccount": {
-  "placeholders": {
-   "email": {
-    "type": "String",
-    "example": "example@example.com"
-   }
-  }
- }
-} 
